@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>File - better.files.File</title>
@@ -9,6 +8,11 @@
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -24,9 +28,17 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="package$$File$.html" title="Go to companion"><img src="../../lib/class_to_object_big.png" /></a>
+        <a href="package$$File$.html" title="See companion object"><img alt="Class/Object" src="../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="better">better</a>.<a href="package.html" class="extype" name="better.files">files</a></p>
-        <h1><a href="package$$File$.html" title="Go to companion">File</a></h1>
+        <h1><a href="package$$File$.html" title="See companion object">File</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="package$$File$.html" title="See companion object">object File</a>
+            | <a href="package.html" class="extype" name="better.files">package files</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#better.files.package$$File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -68,7 +80,6 @@
               <li class="hideall out"><span>Hide All</span></li>
               <li class="showall in"><span>Show all</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -91,7 +102,11 @@
       <span class="symbol">
         <span class="name">File</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@&lt;init&gt;(path:java.nio.file.Path):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -113,22 +128,13 @@
       <span class="symbol">
         <span title="gt4s: $bang" class="name">!</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@!(implicitcodec:scala.io.Codec):String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -139,8 +145,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -152,7 +162,11 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#/" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="/(f:better.files.package.File=&gt;better.files.package.File):better.files.package.File"></a>
@@ -165,7 +179,11 @@
       <span class="symbol">
         <span title="gt4s: $div" class="name">/</span><span class="params">(<span name="f">f: (<a href="" class="extype" name="better.files.File">File</a>) ⇒ <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@/(f:better.files.package.File=&gt;better.files.package.File):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#/" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="/(child:String):better.files.package.File"></a>
@@ -178,7 +196,11 @@
       <span class="symbol">
         <span title="gt4s: $div" class="name">/</span><span class="params">(<span name="child">child: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@/(child:String):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#&lt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;(text:String)(implicitcodec:scala.io.Codec):better.files.package.File"></a>
@@ -191,7 +213,11 @@
       <span class="symbol">
         <span title="gt4s: $less" class="name">&lt;</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@&lt;(text:String)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#&lt;&lt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;&lt;(line:String)(implicitcodec:scala.io.Codec):better.files.package.File"></a>
@@ -204,22 +230,13 @@
       <span class="symbol">
         <span title="gt4s: $less$less" class="name">&lt;&lt;</span><span class="params">(<span name="line">line: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@&lt;&lt;(line:String)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -230,8 +247,12 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#===" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="===:better.files.package.File=&gt;Boolean"></a>
       <a id="===:(File)⇒Boolean"></a>
@@ -243,7 +264,11 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq$eq" class="name">===</span><span class="result">: (<a href="" class="extype" name="better.files.File">File</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@===:better.files.package.File=&gt;Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#&gt;:" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&gt;:(text:String)(implicitcodec:scala.io.Codec):better.files.package.File"></a>
@@ -256,7 +281,11 @@
       <span class="symbol">
         <span title="gt4s: $greater$colon" class="name">&gt;:</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@&gt;:(text:String)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#&gt;&gt;:" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&gt;&gt;:(line:String)(implicitcodec:scala.io.Codec):better.files.package.File"></a>
@@ -269,7 +298,11 @@
       <span class="symbol">
         <span title="gt4s: $greater$greater$colon" class="name">&gt;&gt;:</span><span class="params">(<span name="line">line: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@&gt;&gt;:(line:String)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#addPermission" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="addPermission(permission:java.nio.file.attribute.PosixFilePermission):better.files.package.File"></a>
@@ -282,7 +315,11 @@
       <span class="symbol">
         <span class="name">addPermission</span><span class="params">(<span name="permission">permission: <span class="extype" name="java.nio.file.attribute.PosixFilePermission">PosixFilePermission</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@addPermission(permission:java.nio.file.attribute.PosixFilePermission):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#append" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="append(text:String)(implicitcodec:scala.io.Codec):better.files.package.File"></a>
@@ -295,7 +332,11 @@
       <span class="symbol">
         <span class="name">append</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@append(text:String)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#appendLines" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="appendLines(lines:String*)(implicitcodec:scala.io.Codec):better.files.package.File"></a>
@@ -308,7 +349,11 @@
       <span class="symbol">
         <span class="name">appendLines</span><span class="params">(<span name="lines">lines: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@appendLines(lines:String*)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#appendNewLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="appendNewLine:better.files.package.File"></a>
@@ -321,7 +366,11 @@
       <span class="symbol">
         <span class="name">appendNewLine</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@appendNewLine:better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply(permission:java.nio.file.attribute.PosixFilePermission):Boolean"></a>
@@ -334,7 +383,11 @@
       <span class="symbol">
         <span class="name">apply</span><span class="params">(<span name="permission">permission: <span class="extype" name="java.nio.file.attribute.PosixFilePermission">PosixFilePermission</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@apply(permission:java.nio.file.attribute.PosixFilePermission):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">test if file has this permission
 </p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -348,7 +401,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="better.files.File#attributes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="attributes:java.nio.file.attribute.BasicFileAttributes"></a>
@@ -361,7 +418,11 @@
       <span class="symbol">
         <span class="name">attributes</span><span class="result">: <span class="extype" name="java.nio.file.attribute.BasicFileAttributes">BasicFileAttributes</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@attributes:java.nio.file.attribute.BasicFileAttributes" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#bytes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="bytes:Iterator[Byte]"></a>
@@ -374,9 +435,13 @@
       <span class="symbol">
         <span class="name">bytes</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@bytes:Iterator[Byte]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
-    </li><li name="better.files.File#changeExtensionTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="better.files.File#changeExtensionTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="changeExtensionTo(extension:String):better.files.package.File"></a>
       <a id="changeExtensionTo(String):File"></a>
       <h4 class="signature">
@@ -387,11 +452,14 @@
       <span class="symbol">
         <span class="name">changeExtensionTo</span><span class="params">(<span name="extension">extension: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@changeExtensionTo(extension:String):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Changes the file-extension by renaming this file; if file does not have an extension, it adds the extension
-Example usage file&quot;foo.</p><div class="fullcomment"><div class="comment cmt"><p>Changes the file-extension by renaming this file; if file does not have an extension, it adds the extension
 Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
-</p></div></div>
+</p>
     </li><li name="better.files.File#channel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="channel:java.nio.channels.FileChannel"></a>
       <a id="channel:FileChannel"></a>
@@ -403,7 +471,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">channel</span><span class="result">: <span class="extype" name="java.nio.channels.FileChannel">FileChannel</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@channel:java.nio.channels.FileChannel" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#chars" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="chars(implicitcodec:scala.io.Codec):Iterator[Char]"></a>
@@ -416,7 +488,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">chars</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Char">Char</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@chars(implicitcodec:scala.io.Codec):Iterator[Char]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#checksum" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="checksum(algorithm:String):String"></a>
@@ -429,9 +505,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">checksum</span><span class="params">(<span name="algorithm">algorithm: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;MD5&quot;</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>checksum of this file in hex format //TODO: make this work for directories too
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@checksum(algorithm:String):String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>checksum of this file in hex format //TODO: make this work for directories too</p></dd></dl></div>
     </li><li name="better.files.File#chgrp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="chgrp:String=&gt;better.files.package.File"></a>
       <a id="chgrp:(String)⇒File"></a>
@@ -443,7 +522,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">chgrp</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@chgrp:String=&gt;better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#children" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="children:better.files.package.Files"></a>
@@ -456,7 +539,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">children</span><span class="result">: <a href="package.html#Files=Iterator[better.files.package.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@children:better.files.package.Files" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#chown" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="chown:String=&gt;better.files.package.File"></a>
@@ -469,7 +556,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">chown</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@chown:String=&gt;better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -482,7 +573,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -501,7 +596,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">content</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.io.BufferedSource">BufferedSource</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@content(implicitcodec:scala.io.Codec):scala.io.BufferedSource" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#contentAsString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="contentAsString(implicitcodec:scala.io.Codec):String"></a>
@@ -514,7 +613,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">contentAsString</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@contentAsString(implicitcodec:scala.io.Codec):String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#contentSameAs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="contentSameAs(that:better.files.package.File):Boolean"></a>
@@ -527,9 +630,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">contentSameAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file is exactly same as that file TODO: recursively for directories (or empty files?)
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@contentSameAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file is exactly same as that file TODO: recursively for directories (or empty files?)</p></dd></dl></div>
     </li><li name="better.files.File#contentType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="contentType:Option[String]"></a>
       <a id="contentType:Option[String]"></a>
@@ -541,7 +647,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">contentType</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@contentType:Option[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#copyTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="copyTo(destination:better.files.package.File,overwrite:Boolean):better.files.package.File"></a>
@@ -554,7 +664,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">copyTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>, <span name="overwrite">overwrite: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@copyTo(destination:better.files.package.File,overwrite:Boolean):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#createChild" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createChild(child:String):better.files.package.File"></a>
@@ -567,7 +681,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">createChild</span><span class="params">(<span name="child">child: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@createChild(child:String):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#createDirectories" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createDirectories():better.files.package.File"></a>
@@ -580,7 +698,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">createDirectories</span><span class="params">()</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@createDirectories():better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#createDirectory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createDirectory():better.files.package.File"></a>
@@ -593,7 +715,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">createDirectory</span><span class="params">()</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@createDirectory():better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#createIfNotExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createIfNotExists():better.files.package.File"></a>
@@ -606,7 +732,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">createIfNotExists</span><span class="params">()</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@createIfNotExists():better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#delete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="delete(ignoreIOExceptions:Boolean):better.files.package.File"></a>
@@ -619,9 +749,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">delete</span><span class="params">(<span name="ignoreIOExceptions">ignoreIOExceptions: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt">Deletes this file or directory</p><div class="fullcomment"><div class="comment cmt"><p>Deletes this file or directory</p></div><dl class="paramcmts block"><dt class="param">ignoreIOExceptions</dt><dd class="cmt"><p>If this is set to true, an exception is thrown when delete fails (else it is swallowed)
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@delete(ignoreIOExceptions:Boolean):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Deletes this file or directory</p><div class="fullcomment"><div class="comment cmt"><p>Deletes this file or directory</p></div><dl class="paramcmts block"><dt class="param">ignoreIOExceptions</dt><dd class="cmt"><p>If this is set to true, an exception is thrown when delete fails (else it is swallowed)</p></dd></dl></div>
     </li><li name="better.files.File#dosAttributes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="dosAttributes:java.nio.file.attribute.DosFileAttributes"></a>
       <a id="dosAttributes:DosFileAttributes"></a>
@@ -633,7 +766,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">dosAttributes</span><span class="result">: <span class="extype" name="java.nio.file.attribute.DosFileAttributes">DosFileAttributes</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@dosAttributes:java.nio.file.attribute.DosFileAttributes" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#entries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="entries:better.files.package.Files"></a>
@@ -646,7 +783,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">entries</span><span class="result">: <a href="package.html#Files=Iterator[better.files.package.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@entries:better.files.package.Files" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -659,7 +800,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="better.files.File#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(obj:Any):Boolean"></a>
@@ -672,7 +817,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="obj">obj: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@equals(obj:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.File">File</a> → AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#exists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="exists:Boolean"></a>
@@ -685,7 +834,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">exists</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@exists:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#extension" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="extension:Option[String]"></a>
@@ -698,9 +851,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">extension</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>extension (including the dot) of this file if it is a regular file and has an extension, else None
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@extension:Option[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>extension (including the dot) of this file if it is a regular file and has an extension, else None</p></dd></dl></div>
     </li><li name="better.files.File#fileName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="fileName:String"></a>
       <a id="fileName:String"></a>
@@ -712,7 +868,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">fileName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@fileName:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#fileSystem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="fileSystem:java.nio.file.FileSystem"></a>
@@ -725,7 +885,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">fileSystem</span><span class="result">: <span class="extype" name="java.nio.file.FileSystem">FileSystem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@fileSystem:java.nio.file.FileSystem" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -738,7 +902,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -757,7 +925,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">fs</span><span class="result">: <span class="extype" name="java.nio.file.FileSystem">FileSystem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@fs:java.nio.file.FileSystem" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#fullPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="fullPath:String"></a>
@@ -770,7 +942,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">fullPath</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@fullPath:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
@@ -783,7 +959,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#glob" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="glob(pattern:String,syntax:String,ignoreIOExceptions:Boolean):better.files.package.Files"></a>
@@ -796,9 +976,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">glob</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syntax">syntax: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;glob&quot;</span></span>, <span name="ignoreIOExceptions">ignoreIOExceptions: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.package.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt">Util to glob from this file's path</p><div class="fullcomment"><div class="comment cmt"><p>Util to glob from this file's path</p></div><dl class="paramcmts block"><dt class="param">ignoreIOExceptions</dt><dd class="cmt"><p>when set to true, any file visit exceptions (e.g. a read or permission error) would be silently ignored</p></dd><dt>returns</dt><dd class="cmt"><p>Set of files that matched
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@glob(pattern:String,syntax:String,ignoreIOExceptions:Boolean):better.files.package.Files" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Util to glob from this file's path</p><div class="fullcomment"><div class="comment cmt"><p>Util to glob from this file's path</p></div><dl class="paramcmts block"><dt class="param">ignoreIOExceptions</dt><dd class="cmt"><p>when set to true, any file visit exceptions (e.g. a read or permission error) would be silently ignored</p></dd><dt>returns</dt><dd class="cmt"><p>Set of files that matched</p></dd></dl></div>
     </li><li name="better.files.File#group" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="group:java.nio.file.attribute.GroupPrincipal"></a>
       <a id="group:GroupPrincipal"></a>
@@ -810,7 +993,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">group</span><span class="result">: <span class="extype" name="java.nio.file.attribute.GroupPrincipal">GroupPrincipal</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@group:java.nio.file.attribute.GroupPrincipal" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#hasExtension" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="hasExtension:Boolean"></a>
@@ -823,7 +1010,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">hasExtension</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@hasExtension:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -836,7 +1027,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.File">File</a> → AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#in" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="in:java.io.InputStream"></a>
@@ -849,7 +1044,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">in</span><span class="result">: <span class="extype" name="java.io.InputStream">InputStream</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@in:java.io.InputStream" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isDirectory" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isDirectory:Boolean"></a>
@@ -862,9 +1061,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isDirectory</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file (or the file found by following symlink) is a directory
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isDirectory:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file (or the file found by following symlink) is a directory</p></dd></dl></div>
     </li><li name="better.files.File#isGroupExecutable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isGroupExecutable:Boolean"></a>
       <a id="isGroupExecutable:Boolean"></a>
@@ -876,7 +1078,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isGroupExecutable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isGroupExecutable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isGroupReadable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isGroupReadable:Boolean"></a>
@@ -889,7 +1095,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isGroupReadable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isGroupReadable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isGroupWritable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isGroupWritable:Boolean"></a>
@@ -902,7 +1112,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isGroupWritable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isGroupWritable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isHidden" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isHidden:Boolean"></a>
@@ -915,7 +1129,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isHidden</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isHidden:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -928,7 +1146,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="better.files.File#isOtherExecutable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOtherExecutable:Boolean"></a>
@@ -941,7 +1163,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isOtherExecutable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isOtherExecutable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isOtherReadable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOtherReadable:Boolean"></a>
@@ -954,7 +1180,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isOtherReadable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isOtherReadable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isOtherWritable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOtherWritable:Boolean"></a>
@@ -967,7 +1197,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isOtherWritable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isOtherWritable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isOwnerExecutable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOwnerExecutable:Boolean"></a>
@@ -980,7 +1214,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isOwnerExecutable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isOwnerExecutable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isOwnerReadable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOwnerReadable:Boolean"></a>
@@ -993,7 +1231,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isOwnerReadable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isOwnerReadable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isOwnerWritable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOwnerWritable:Boolean"></a>
@@ -1006,7 +1248,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isOwnerWritable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isOwnerWritable:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#isRegularFile" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isRegularFile:Boolean"></a>
@@ -1019,9 +1265,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isRegularFile</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file (or the file found by following symlink) is a regular file
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isRegularFile:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file (or the file found by following symlink) is a regular file</p></dd></dl></div>
     </li><li name="better.files.File#isSymLink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isSymLink:Boolean"></a>
       <a id="isSymLink:Boolean"></a>
@@ -1033,7 +1282,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">isSymLink</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isSymLink:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#lastModifiedTime" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="lastModifiedTime:java.time.Instant"></a>
@@ -1046,7 +1299,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">lastModifiedTime</span><span class="result">: <span class="extype" name="java.time.Instant">Instant</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@lastModifiedTime:java.time.Instant" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#lines" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="lines(implicitcodec:scala.io.Codec):Iterator[String]"></a>
@@ -1059,7 +1316,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">lines</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@lines(implicitcodec:scala.io.Codec):Iterator[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#linkTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="linkTo(destination:better.files.package.File,symbolic:Boolean):better.files.package.File"></a>
@@ -1072,7 +1333,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">linkTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>, <span name="symbolic">symbolic: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@linkTo(destination:better.files.package.File,symbolic:Boolean):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#list" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="list:better.files.package.Files"></a>
@@ -1085,7 +1350,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">list</span><span class="result">: <a href="package.html#Files=Iterator[better.files.package.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@list:better.files.package.Files" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#listRecursively" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="listRecursively(maxDepth:Int):better.files.package.Files"></a>
@@ -1098,7 +1367,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">listRecursively</span><span class="params">(<span name="maxDepth">maxDepth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Int.MaxValue</span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.package.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@listRecursively(maxDepth:Int):better.files.package.Files" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#moveTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="moveTo(destination:better.files.package.File,overwrite:Boolean):better.files.package.File"></a>
@@ -1111,7 +1384,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">moveTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>, <span name="overwrite">overwrite: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@moveTo(destination:better.files.package.File,overwrite:Boolean):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="name:String"></a>
@@ -1124,7 +1401,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@name:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#nameWithoutExtension" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nameWithoutExtension:String"></a>
@@ -1137,7 +1418,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">nameWithoutExtension</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@nameWithoutExtension:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -1150,7 +1435,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="better.files.File#newBufferedReader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="newBufferedReader(implicitcodec:scala.io.Codec):java.io.BufferedReader"></a>
@@ -1163,7 +1452,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">newBufferedReader</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@newBufferedReader(implicitcodec:scala.io.Codec):java.io.BufferedReader" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#newBufferedWriter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="newBufferedWriter(implicitcodec:scala.io.Codec):java.io.BufferedWriter"></a>
@@ -1176,7 +1469,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">newBufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedWriter">BufferedWriter</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@newBufferedWriter(implicitcodec:scala.io.Codec):java.io.BufferedWriter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#newFileChannel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="newFileChannel:java.nio.channels.FileChannel"></a>
@@ -1189,7 +1486,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">newFileChannel</span><span class="result">: <span class="extype" name="java.nio.channels.FileChannel">FileChannel</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@newFileChannel:java.nio.channels.FileChannel" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#newInputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="newInputStream:java.io.InputStream"></a>
@@ -1202,7 +1503,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">newInputStream</span><span class="result">: <span class="extype" name="java.io.InputStream">InputStream</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@newInputStream:java.io.InputStream" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#newOutputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="newOutputStream:java.io.OutputStream"></a>
@@ -1215,7 +1520,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">newOutputStream</span><span class="result">: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@newOutputStream:java.io.OutputStream" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#notExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="notExists:Boolean"></a>
@@ -1228,7 +1537,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">notExists</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@notExists:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -1241,7 +1554,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -1254,7 +1571,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="better.files.File#out" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="out:java.io.OutputStream"></a>
@@ -1267,7 +1588,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">out</span><span class="result">: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@out:java.io.OutputStream" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#overwrite" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="overwrite(text:String)(implicitcodec:scala.io.Codec):better.files.package.File"></a>
@@ -1280,7 +1605,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">overwrite</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@overwrite(text:String)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#owner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="owner:java.nio.file.attribute.UserPrincipal"></a>
@@ -1293,7 +1622,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">owner</span><span class="result">: <span class="extype" name="java.nio.file.attribute.UserPrincipal">UserPrincipal</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@owner:java.nio.file.attribute.UserPrincipal" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#parent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="parent:better.files.package.File"></a>
@@ -1306,7 +1639,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">parent</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@parent:better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#path" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="path:java.nio.file.Path"></a>
@@ -1319,7 +1656,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">path</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@path:java.nio.file.Path" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#permissions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="permissions:Set[java.nio.file.attribute.PosixFilePermission]"></a>
@@ -1332,7 +1673,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">permissions</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="java.nio.file.attribute.PosixFilePermission">PosixFilePermission</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@permissions:Set[java.nio.file.attribute.PosixFilePermission]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#posixAttributes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="posixAttributes:java.nio.file.attribute.PosixFileAttributes"></a>
@@ -1345,7 +1690,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">posixAttributes</span><span class="result">: <span class="extype" name="java.nio.file.attribute.PosixFileAttributes">PosixFileAttributes</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@posixAttributes:java.nio.file.attribute.PosixFileAttributes" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#reader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="reader(implicitcodec:scala.io.Codec):java.io.BufferedReader"></a>
@@ -1358,7 +1707,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">reader</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@reader(implicitcodec:scala.io.Codec):java.io.BufferedReader" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#removePermission" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="removePermission(permission:java.nio.file.attribute.PosixFilePermission):better.files.package.File"></a>
@@ -1371,7 +1724,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">removePermission</span><span class="params">(<span name="permission">permission: <span class="extype" name="java.nio.file.attribute.PosixFilePermission">PosixFilePermission</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@removePermission(permission:java.nio.file.attribute.PosixFilePermission):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#renameTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="renameTo(newName:String):better.files.package.File"></a>
@@ -1384,7 +1741,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">renameTo</span><span class="params">(<span name="newName">newName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@renameTo(newName:String):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#root" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="root:better.files.package.File"></a>
@@ -1397,7 +1758,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">root</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@root:better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#sameFileAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="sameFileAs(that:better.files.package.File):Boolean"></a>
@@ -1410,7 +1775,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">sameFileAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@sameFileAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#samePathAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="samePathAs(that:better.files.package.File):Boolean"></a>
@@ -1423,7 +1792,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">samePathAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@samePathAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#setGroup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="setGroup(group:String):better.files.package.File"></a>
@@ -1436,7 +1809,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">setGroup</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@setGroup(group:String):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#setOwner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="setOwner(owner:String):better.files.package.File"></a>
@@ -1449,7 +1826,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">setOwner</span><span class="params">(<span name="owner">owner: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@setOwner(owner:String):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#setPermissions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="setPermissions(permissions:Set[java.nio.file.attribute.PosixFilePermission]):better.files.package.File"></a>
@@ -1462,7 +1843,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">setPermissions</span><span class="params">(<span name="permissions">permissions: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="java.nio.file.attribute.PosixFilePermission">PosixFilePermission</span>]</span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@setPermissions(permissions:Set[java.nio.file.attribute.PosixFilePermission]):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#size" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="size:Long"></a>
@@ -1475,9 +1860,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">size</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>file size (for directories, return size of the directory) in bytes
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@size:Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>file size (for directories, return size of the directory) in bytes</p></dd></dl></div>
     </li><li name="better.files.File#source" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="source(implicitcodec:scala.io.Codec):scala.io.BufferedSource"></a>
       <a id="source(Codec):BufferedSource"></a>
@@ -1489,7 +1877,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">source</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.io.BufferedSource">BufferedSource</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@source(implicitcodec:scala.io.Codec):scala.io.BufferedSource" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#subPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="subPath(start:Int,end:Int):java.nio.file.Path"></a>
@@ -1502,7 +1894,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">subPath</span><span class="params">(<span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="end">end: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@subPath(start:Int,end:Int):java.nio.file.Path" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#symLink" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="symLink:Option[better.files.package.File]"></a>
@@ -1515,9 +1911,12 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">symLink</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="" class="extype" name="better.files.File">File</a>]</span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Some(target) if this is a symbolic link (to target) else None
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@symLink:Option[better.files.package.File]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Some(target) if this is a symbolic link (to target) else None</p></dd></dl></div>
     </li><li name="better.files.File#symLinkTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="symLinkTo(destination:better.files.package.File):java.nio.file.Path"></a>
       <a id="symLinkTo(File):Path"></a>
@@ -1529,7 +1928,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">symLinkTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@symLinkTo(destination:better.files.package.File):java.nio.file.Path" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -1542,7 +1945,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="better.files.File#toJava" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="toJava:java.io.File"></a>
@@ -1555,7 +1962,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">toJava</span><span class="result">: <span class="extype" name="java.io.File">java.io.File</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@toJava:java.io.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -1568,7 +1979,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.File">File</a> → AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#touch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="touch(time:java.time.Instant):better.files.package.File"></a>
@@ -1581,7 +1996,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">touch</span><span class="params">(<span name="time">time: <span class="extype" name="java.time.Instant">Instant</span> = <span class="symbol">Instant.now()</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@touch(time:java.time.Instant):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Similar to the UNIX command touch - create this file if it does not exist and set its last modification time
 </p>
     </li><li name="better.files.File#uri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1595,7 +2014,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">uri</span><span class="result">: <span class="extype" name="java.net.URI">URI</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@uri:java.net.URI" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -1608,7 +2031,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1627,7 +2054,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1646,7 +2077,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1665,7 +2100,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">write</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@write(text:String)(implicitcodec:scala.io.Codec):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#write" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="write(bytes:Iterator[Byte]):better.files.package.File"></a>
@@ -1678,7 +2117,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">write</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@write(bytes:Iterator[Byte]):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="better.files.File#writer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="writer(implicitcodec:scala.io.Codec):java.io.BufferedWriter"></a>
@@ -1691,7 +2134,11 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <span class="symbol">
         <span class="name">writer</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedWriter">BufferedWriter</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@writer(implicitcodec:scala.io.Codec):java.io.BufferedWriter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -1722,6 +2169,7 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script>
+
+
     </body>
       </html>

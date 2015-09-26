@@ -88,24 +88,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="better.files.Closeable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Closeable=AnyRef{defclose():Unit}"></a>
-      <a id="Closeable:Closeable"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Closeable</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { def close(): Unit }</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@Closeable=AnyRef{defclose():Unit}" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="better.files.File" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="better.files.File" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FileextendsAnyRef"></a>
       <a id="File:File"></a>
       <h4 class="signature">
@@ -436,37 +419,6 @@
       </a>
     </span>
       
-    </li><li name="better.files#managed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="managed[A&lt;:better.files.package.Closeable](resource:A):Traversable[A]"></a>
-      <a id="managed[A&lt;:Closeable](A):Traversable[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">managed</span><span class="tparams">[<span name="A">A &lt;: <a href="#Closeable=AnyRef{defclose():Unit}" class="extmbr" name="better.files.Closeable">Closeable</a></span>]</span><span class="params">(<span name="resource">resource: <span class="extype" name="better.files.managed.A">A</span></span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="better.files.managed.A">A</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@managed[A&lt;:better.files.package.Closeable](resource:A):Traversable[A]" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Lightweight automatic resource management
-Closes the resource when done
-e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Lightweight automatic resource management
-Closes the resource when done
-e.g.
-<pre>
-<code>
-for {
-  in <- managed(file.newInputStream)
-</code> in.write(bytes)
-// in is closed now
-</code>
-@param resource
-@return
-</p></div></div>
     </li><li name="better.files#root" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="root:better.files.package.File"></a>
       <a id="root:File"></a>

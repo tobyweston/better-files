@@ -571,14 +571,14 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">checksum</span><span class="params">(<span name="algorithm">algorithm: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;MD5&quot;</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">checksum</span><span class="params">(<span name="algorithm">algorithm: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.package$$File@checksum(algorithm:String):String" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>checksum of this file in hex format //TODO: make this work for directories too</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>checksum of this file (or directory) in hex format</p></dd></dl></div>
     </li><li name="better.files.File#chgrp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="chgrp(group:String):better.files.package.File"></a>
       <a id="chgrp(String):File"></a>
@@ -806,6 +806,23 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       </a>
     </span>
       <p class="shortcomment cmt">Deletes this file or directory</p><div class="fullcomment"><div class="comment cmt"><p>Deletes this file or directory</p></div><dl class="paramcmts block"><dt class="param">ignoreIOExceptions</dt><dd class="cmt"><p>If this is set to true, an exception is thrown when delete fails (else it is swallowed)</p></dd></dl></div>
+    </li><li name="better.files.File#digest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="digest(algorithm:String):Array[Byte]"></a>
+      <a id="digest(String):Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">digest</span><span class="params">(<span name="algorithm">algorithm: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@digest(algorithm:String):Array[Byte]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#dosAttributes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="dosAttributes:java.nio.file.attribute.DosFileAttributes"></a>
       <a id="dosAttributes:DosFileAttributes"></a>
@@ -1950,7 +1967,9 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file is exactly same as that file TODO: recursively for directories (or empty files?)</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file is exactly same as that file
+        For directories, it checks for equivalent directory structure
+        Note: Since it uses md5 underneath, there is a small chance of an md5 collision for different files</p></dd></dl></div>
     </li><li name="better.files.File#sameFileAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="sameFileAs(that:better.files.package.File):Boolean"></a>
       <a id="sameFileAs(File):Boolean"></a>

@@ -2037,6 +2037,25 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
     </span>
       <p class="shortcomment cmt">Similar to the UNIX command touch - create this file if it does not exist and set its last modification time
 </p>
+    </li><li name="better.files.File#unzip" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unzip(destination:better.files.package.File):better.files.package.File"></a>
+      <a id="unzip(File):File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unzip</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a> = <span class="symbol"><span class="name"><a href="#name:String">File.newTempDir(name)</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@unzip(destination:better.files.package.File):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Unzips this zip file
+</p><div class="fullcomment"><div class="comment cmt"><p>Unzips this zip file
+</p></div><dl class="paramcmts block"><dt class="param">destination</dt><dd class="cmt"><p>destination folder; Creates this if it does not exist. If missing uses a temp directory</p></dd><dt>returns</dt><dd class="cmt"><p>The destination where contents are unzipped</p></dd></dl></div>
     </li><li name="better.files.File#uri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="uri:java.net.URI"></a>
       <a id="uri:URI"></a>
@@ -2174,6 +2193,25 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       </a>
     </span>
       
+    </li><li name="better.files.File#zip" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="zip(destination:better.files.package.File):better.files.package.File"></a>
+      <a id="zip(File):File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zip</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a> = <span class="symbol"><span class="name"><a href="#name:String">File.newTemp(name, &quot;.zip&quot;)</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@zip(destination:better.files.package.File):better.files.package.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Zips this file (or directory)
+</p><div class="fullcomment"><div class="comment cmt"><p>Zips this file (or directory)
+</p></div><dl class="paramcmts block"><dt class="param">destination</dt><dd class="cmt"><p>The destination file; Creates this if it does not exist. If missing uses a temp file</p></dd><dt>returns</dt><dd class="cmt"><p>The destination zip file</p></dd></dl></div>
     </li></ol>
             </div>
 

@@ -1223,18 +1223,18 @@ See: http://codeforces.com/blog/entry/7018
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="better.files.Scanner#next" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="next[A](f:String=&gt;A):Option[A]"></a>
-      <a id="next[A]((String)⇒A):Option[A]"></a>
+      <a id="next[A](f:String=&gt;Option[A]):Option[A]"></a>
+      <a id="next[A]((String)⇒Option[A]):Option[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">next</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="better.files.Scanner.next.A">A</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="better.files.Scanner.next.A">A</span>]</span>
+        <span class="name">next</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="better.files.Scanner.next.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="better.files.Scanner.next.A">A</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner@next[A](f:String=&gt;A):Option[A]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner@next[A](f:String=&gt;Option[A]):Option[A]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1341,6 +1341,40 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       
+    </li><li name="better.files.Scanner#nextMatch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextMatch(f:String=&gt;Boolean):Option[String]"></a>
+      <a id="nextMatch((String)⇒Boolean):Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextMatch</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextMatch(f:String=&gt;Boolean):Option[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.Scanner#nextPattern" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextPattern(pattern:String):Option[String]"></a>
+      <a id="nextPattern(String):Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextPattern</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextPattern(pattern:String):Option[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.Scanner#nextString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nextString():Option[String]"></a>
       <a id="nextString():Option[String]"></a>
@@ -1354,6 +1388,23 @@ See: http://codeforces.com/blog/entry/7018
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.Scanner@nextString():Option[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.Scanner#nextTry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextTry[A](f:String=&gt;A):Option[A]"></a>
+      <a id="nextTry[A]((String)⇒A):Option[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextTry</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="better.files.Scanner.nextTry.A">A</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="better.files.Scanner.nextTry.A">A</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextTry[A](f:String=&gt;A):Option[A]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1724,7 +1775,7 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">skip</span><span class="params">(<span name="lines">lines: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>, <span name="tokens">tokens: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">skip</span><span class="params">(<span name="lines">lines: <span class="extype" name="scala.Int">Int</span></span>, <span name="tokens">tokens: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.Scanner@skip(lines:Int,tokens:Int):better.files.Scanner" title="Permalink" target="_top">

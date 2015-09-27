@@ -1679,6 +1679,23 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       </a>
     </span>
       
+    </li><li name="better.files.File#newRandomAccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="newRandomAccess(mode:String):java.io.RandomAccessFile"></a>
+      <a id="newRandomAccess(String):RandomAccessFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newRandomAccess</span><span class="params">(<span name="mode">mode: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;r&quot;</span></span>)</span><span class="result">: <span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@newRandomAccess(mode:String):java.io.RandomAccessFile" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#notExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="notExists:Boolean"></a>
       <a id="notExists:Boolean"></a>
@@ -1866,6 +1883,23 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       </a>
     </span>
       
+    </li><li name="better.files.File#randomAccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="randomAccess(mode:String):java.io.RandomAccessFile"></a>
+      <a id="randomAccess(String):RandomAccessFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomAccess</span><span class="params">(<span name="mode">mode: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;r&quot;</span></span>)</span><span class="result">: <span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@randomAccess(mode:String):java.io.RandomAccessFile" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#reader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="reader(implicitcodec:scala.io.Codec):java.io.BufferedReader"></a>
       <a id="reader(Codec):BufferedReader"></a>
@@ -1969,7 +2003,7 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file is exactly same as that file
         For directories, it checks for equivalent directory structure
-        Note: Since it uses md5 underneath, there is a small chance of an md5 collision for different files</p></dd></dl></div>
+        Note: Since it uses md5 underneath, there is a small chance of an md5 collision for different files (TODO)</p></dd></dl></div>
     </li><li name="better.files.File#sameFileAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="sameFileAs(that:better.files.package.File):Boolean"></a>
       <a id="sameFileAs(File):Boolean"></a>
@@ -2235,7 +2269,7 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unzipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a> = <span class="symbol"><span class="name"><a href="#name:String">File.newTempDir(name)</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">unzipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.package$$File@unzipTo(destination:better.files.package.File):better.files.package.File" title="Permalink" target="_top">
@@ -2365,7 +2399,7 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       </a>
     </span>
       
-    </li><li name="better.files.File#write" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.File#write" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="write(bytes:Array[Byte]):better.files.package.File"></a>
       <a id="write(Array[Byte]):File"></a>
       <h4 class="signature">
@@ -2381,7 +2415,7 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Write byte array to file.</p><div class="fullcomment"><div class="comment cmt"><p>Write byte array to file. For large files, piping in streams is recommended</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>this</p></dd></dl></div>
     </li><li name="better.files.File#writer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="writer(implicitcodec:scala.io.Codec):java.io.BufferedWriter"></a>
       <a id="writer(Codec):BufferedWriter"></a>

@@ -28,10 +28,12 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img alt="Class" src="../../lib/class_big.png" />
+        <a href="Scanner$.html" title="See companion object"><img alt="Class/Object" src="../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="better">better</a>.<a href="package.html" class="extype" name="better.files">files</a></p>
-        <h1>Scanner</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="better.files">package files</a>
+        <h1><a href="Scanner$.html" title="See companion object">Scanner</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Scanner$.html" title="See companion object">object Scanner</a>
+            | <a href="package.html" class="extype" name="better.files">package files</a>
           </div></span></h3><span class="permalink">
       <a href="../../index.html#better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
@@ -159,7 +161,7 @@ See: http://codeforces.com/blog/entry/7018
     </span>
       
     </li><li name="better.files.Scanner#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(reader:java.io.BufferedReader):better.files.Scanner"></a>
+      <a id="&lt;init&gt;(reader:java.io.BufferedReader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner"></a>
       <a id="&lt;init&gt;:Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -167,10 +169,10 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Scanner</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>)</span>
+        <span class="name">Scanner</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>, <span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.defaultDelimiter</a></span></span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner@&lt;init&gt;(reader:java.io.BufferedReader):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner@&lt;init&gt;(reader:java.io.BufferedReader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -604,6 +606,23 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce → GenTraversableOnce</dd></dl></div>
+    </li><li name="better.files.Scanner#delimiter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="delimiter:String"></a>
+      <a id="delimiter:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">delimiter</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@delimiter:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.collection.Iterator#drop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="drop(n:&lt;?&gt;):Iterator[A]"></a>
       <a id="drop(Int):Iterator[String]"></a>
@@ -967,6 +986,23 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="better.files.Scanner#includeDelimiters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="includeDelimiters:Boolean"></a>
+      <a id="includeDelimiters:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">includeDelimiters</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@includeDelimiters:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.collection.Iterator#indexOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="indexOf[B&lt;:&lt;?&gt;](elem:&lt;?&gt;):Int"></a>
       <a id="indexOf[B&gt;:String](B):Int"></a>
@@ -1222,7 +1258,7 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="better.files.Scanner#next" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.Scanner#next" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="next[A](f:String=&gt;Option[A]):Option[A]"></a>
       <a id="next[A]((String)⇒Option[A]):Option[A]"></a>
       <h4 class="signature">
@@ -1238,7 +1274,10 @@ See: http://codeforces.com/blog/entry/7018
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="better.files.Scanner#next" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="next():String"></a>
       <a id="next():String"></a>
@@ -1256,6 +1295,40 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.Scanner">Scanner</a> → Iterator</dd></dl></div>
+    </li><li name="better.files.Scanner#nextBigDecimal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextBigDecimal():Option[BigDecimal]"></a>
+      <a id="nextBigDecimal():Option[BigDecimal]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextBigDecimal</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.BigDecimal">BigDecimal</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextBigDecimal():Option[BigDecimal]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.Scanner#nextBigInt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextBigInt():Option[BigInt]"></a>
+      <a id="nextBigInt():Option[BigInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextBigInt</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.BigInt">BigInt</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextBigInt():Option[BigInt]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.Scanner#nextBoolean" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nextBoolean():Option[Boolean]"></a>
       <a id="nextBoolean():Option[Boolean]"></a>
@@ -1273,6 +1346,23 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       
+    </li><li name="better.files.Scanner#nextByte" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextByte():Option[Byte]"></a>
+      <a id="nextByte():Option[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextByte</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextByte():Option[Byte]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.Scanner#nextDouble" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nextDouble():Option[Double]"></a>
       <a id="nextDouble():Option[Double]"></a>
@@ -1286,6 +1376,23 @@ See: http://codeforces.com/blog/entry/7018
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.Scanner@nextDouble():Option[Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.Scanner#nextFloat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextFloat():Option[Float]"></a>
+      <a id="nextFloat():Option[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextFloat</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextFloat():Option[Float]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1341,7 +1448,7 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       
-    </li><li name="better.files.Scanner#nextMatch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.Scanner#nextMatch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nextMatch(f:String=&gt;Boolean):Option[String]"></a>
       <a id="nextMatch((String)⇒Boolean):Option[String]"></a>
       <h4 class="signature">
@@ -1357,7 +1464,10 @@ See: http://codeforces.com/blog/entry/7018
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="better.files.Scanner#nextPattern" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nextPattern(pattern:String):Option[String]"></a>
       <a id="nextPattern(String):Option[String]"></a>
@@ -1371,6 +1481,23 @@ See: http://codeforces.com/blog/entry/7018
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.Scanner@nextPattern(pattern:String):Option[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.Scanner#nextShort" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextShort():Option[Short]"></a>
+      <a id="nextShort():Option[Short]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextShort</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Short">Short</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@nextShort():Option[Short]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1392,7 +1519,7 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       
-    </li><li name="better.files.Scanner#nextSuccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.Scanner#nextSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nextSuccess[A](f:String=&gt;scala.util.Try[A]):Option[A]"></a>
       <a id="nextSuccess[A]((String)⇒Try[A]):Option[A]"></a>
       <h4 class="signature">
@@ -1408,8 +1535,11 @@ See: http://codeforces.com/blog/entry/7018
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="better.files.Scanner#nextTry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="better.files.Scanner#nextTry" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nextTry[A](f:String=&gt;A):Option[A]"></a>
       <a id="nextTry[A]((String)⇒A):Option[A]"></a>
       <h4 class="signature">
@@ -1425,7 +1555,10 @@ See: http://codeforces.com/blog/entry/7018
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.collection.TraversableOnce#nonEmpty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nonEmpty:Boolean"></a>
       <a id="nonEmpty:Boolean"></a>
@@ -1783,6 +1916,23 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce → GenTraversableOnce</dd></dl></div>
+    </li><li name="better.files.Scanner#skip" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="skip(pattern:String):better.files.Scanner"></a>
+      <a id="skip(String):Scanner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">skip</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.Scanner">Scanner</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner@skip(pattern:String):better.files.Scanner" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.Scanner#skip" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="skip(lines:Int,tokens:Int):better.files.Scanner"></a>
       <a id="skip(Int,Int):Scanner"></a>

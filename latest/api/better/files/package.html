@@ -141,7 +141,7 @@
     </span>
       
     </li><li name="better.files.FileWatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FileWatcherextendsActorwithActorLogging"></a>
+      <a id="FileWatcherextendsActor"></a>
       <a id="FileWatcher:FileWatcher"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -149,14 +149,15 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FileWatcher.html"><span class="name">FileWatcher</span></a><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span> with <span class="extype" name="akka.actor.ActorLogging">ActorLogging</span></span>
+        <a href="FileWatcher.html"><span class="name">FileWatcher</span></a><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@FileWatcherextendsActorwithActorLogging" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.package@FileWatcherextendsActor" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">An actor that can watch a file or a directory
+Instead of directly calling the constructor of this, call file.newWatcher to create the actor
 </p>
     </li><li name="better.files.Files" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Files=Iterator[better.files.package.File]"></a>

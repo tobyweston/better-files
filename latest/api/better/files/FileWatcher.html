@@ -206,23 +206,6 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="better.files.FileWatcher#addCallback" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="addCallback(event:better.files.FileWatcher.Event)(callback:better.files.FileWatcher.Callback):Unit"></a>
-      <a id="addCallback(Event)(Callback):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addCallback</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[_]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>)</span><span class="params">(<span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileWatcher@addCallback(event:better.files.FileWatcher.Event)(callback:better.files.FileWatcher.Callback):Unit" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="akka.actor.Actor#aroundPostRestart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPostRestart(reason:&lt;?&gt;):Unit"></a>
       <a id="aroundPostRestart(Throwable):Unit"></a>
@@ -326,18 +309,18 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="better.files.FileWatcher#callbacks" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="callbacks:scala.collection.mutable.Map[better.files.FileWatcher.Event,Set[better.files.FileWatcher.Callback]]"></a>
-      <a id="callbacks:Map[Event,Set[Callback]]"></a>
+      <a id="callbacks:scala.collection.mutable.MultiMap[better.files.FileWatcher.Event,better.files.FileWatcher.Callback]"></a>
+      <a id="callbacks:MultiMap[Event,Callback]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">callbacks</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[_]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a>]]</span>
+        <span class="name">callbacks</span><span class="result">: <span class="extype" name="scala.collection.mutable.MultiMap">MultiMap</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[_]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>, <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileWatcher@callbacks:scala.collection.mutable.Map[better.files.FileWatcher.Event,Set[better.files.FileWatcher.Callback]]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileWatcher@callbacks:scala.collection.mutable.MultiMap[better.files.FileWatcher.Event,better.files.FileWatcher.Callback]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

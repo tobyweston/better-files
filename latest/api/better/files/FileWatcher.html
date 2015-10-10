@@ -723,23 +723,6 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="better.files.FileWatcher#thread" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="thread:Thread"></a>
-      <a id="thread:Thread"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">thread</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileWatcher@thread:Thread" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -844,18 +827,18 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
               
         </dd></dl></div>
     </li><li name="better.files.FileWatcher#watcher" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="watcher:Runnable{defprocess(key:java.nio.file.WatchKey):Boolean}"></a>
-      <a id="watcher:Runnable{defprocess(key:java.nio.file.WatchKey):Boolean}"></a>
+      <a id="watcher:Thread{defprocess(key:java.nio.file.WatchKey):Boolean}"></a>
+      <a id="watcher:Thread{defprocess(key:java.nio.file.WatchKey):Boolean}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">watcher</span><span class="result">: <span class="extype" name="java.lang.Runnable">Runnable</span> { def process(key: java.nio.file.WatchKey): Boolean }</span>
+        <span class="name">watcher</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span> { def process(key: java.nio.file.WatchKey): Boolean }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileWatcher@watcher:Runnable{defprocess(key:java.nio.file.WatchKey):Boolean}" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileWatcher@watcher:Thread{defprocess(key:java.nio.file.WatchKey):Boolean}" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

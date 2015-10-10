@@ -1392,6 +1392,77 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
       </a>
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file (or the file found by following symlink) is a regular file</p></dd></dl></div>
+    </li><li name="better.files.File#isSameContentAs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isSameContentAs(that:better.files.package.File):Boolean"></a>
+      <a id="isSameContentAs(File):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSameContentAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isSameContentAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file is exactly same as that file
+        For directories, it checks for equivalent directory structure</p></dd></dl></div>
+    </li><li name="better.files.File#isSameFileAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSameFileAs(that:better.files.package.File):Boolean"></a>
+      <a id="isSameFileAs(File):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSameFileAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isSameFileAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#isSamePathAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSamePathAs(that:better.files.package.File):Boolean"></a>
+      <a id="isSamePathAs(File):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSamePathAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isSamePathAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#isSimilarContentAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSimilarContentAs(that:better.files.package.File):Boolean"></a>
+      <a id="isSimilarContentAs(File):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSimilarContentAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package$$File@isSimilarContentAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Almost same as isSameContentAs but uses faster md5 hashing to compare (and thus small chance of false positive)
+Also works for directories
+</p>
     </li><li name="better.files.File#isSymbolicLink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isSymbolicLink:Boolean"></a>
       <a id="isSymbolicLink:Boolean"></a>
@@ -2102,59 +2173,6 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.package$$File@root:better.files.package.File" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="better.files.File#sameContentAs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sameContentAs(that:better.files.package.File):Boolean"></a>
-      <a id="sameContentAs(File):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sameContentAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.package$$File@sameContentAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file is exactly same as that file
-        For directories, it checks for equivalent directory structure
-        Note: Since it uses md5 underneath, there is a small chance of an md5 collision for different files (TODO)</p></dd></dl></div>
-    </li><li name="better.files.File#sameFileAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sameFileAs(that:better.files.package.File):Boolean"></a>
-      <a id="sameFileAs(File):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sameFileAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.package$$File@sameFileAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="better.files.File#samePathAs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="samePathAs(that:better.files.package.File):Boolean"></a>
-      <a id="samePathAs(File):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">samePathAs</span><span class="params">(<span name="that">that: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.package$$File@samePathAs(that:better.files.package.File):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

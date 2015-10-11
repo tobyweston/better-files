@@ -47,7 +47,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">FileWatcher</span><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span></span>
+        <span class="name">FileWatcher</span><span class="result"> extends <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a> with <span class="extype" name="akka.actor.Actor">Actor</span></span>
       </span>
       </h4>
       
@@ -55,7 +55,7 @@
 Instead of directly calling the constructor of this, call file.newWatcher to create the actor
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="akka.actor.Actor">Actor</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="akka.actor.Actor">Actor</span>, <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a>, <span class="extype" name="java.lang.Thread">Thread</span>, <span class="extype" name="java.lang.Runnable">Runnable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -73,7 +73,7 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="better.files.FileWatcher"><span>FileWatcher</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="better.files.FileWatcher"><span>FileWatcher</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="better.files.FileMonitor"><span>FileMonitor</span></li><li class="in" name="java.lang.Thread"><span>Thread</span></li><li class="in" name="java.lang.Runnable"><span>Runnable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -317,7 +317,7 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">callbacks</span><span class="result">: <span class="extype" name="scala.collection.mutable.MultiMap">MultiMap</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>, <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a>]</span>
+        <span class="name">callbacks</span><span class="result">: <span class="extype" name="scala.collection.mutable.MultiMap">MultiMap</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>, <a href="FileWatcher$.html#Callback=PartialFunction[(better.files.FileWatcher.Event,better.files.File),Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.FileWatcher@callbacks:scala.collection.mutable.MultiMap[better.files.FileWatcher.Event,better.files.FileWatcher.Callback]" title="Permalink" target="_top">
@@ -325,7 +325,24 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd></dl></div>
-    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="java.lang.Thread#checkAccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkAccess():Unit"></a>
+      <a id="checkAccess():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">checkAccess</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@checkAccess():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -341,7 +358,7 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>Thread → AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
@@ -365,6 +382,23 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="better.files.FileWatcher#dispatch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dispatch(event:better.files.FileWatcher.Event,file:better.files.File):Unit"></a>
+      <a id="dispatch(Event,File):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dispatch</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="file">file: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@dispatch(event:better.files.FileWatcher.Event,file:better.files.File):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.FileWatcher">FileWatcher</a> → <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -439,6 +473,145 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="java.lang.Thread#getContextClassLoader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getContextClassLoader():ClassLoader"></a>
+      <a id="getContextClassLoader():ClassLoader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getContextClassLoader</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.ClassLoader">ClassLoader</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getContextClassLoader():ClassLoader" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@CallerSensitive</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="java.lang.Thread#getId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getId():Long"></a>
+      <a id="getId():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getId</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getId():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#getName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getName():String"></a>
+      <a id="getName():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getName</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getName():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#getPriority" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getPriority():Int"></a>
+      <a id="getPriority():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPriority</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getPriority():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#getStackTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getStackTrace():Array[StackTraceElement]"></a>
+      <a id="getStackTrace():Array[StackTraceElement]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getStackTrace</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="java.lang.StackTraceElement">StackTraceElement</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getStackTrace():Array[StackTraceElement]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#getState" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getState():java.lang.Thread.State"></a>
+      <a id="getState():State"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getState</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Thread.State">State</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getState():java.lang.Thread.State" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#getThreadGroup" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getThreadGroup():ThreadGroup"></a>
+      <a id="getThreadGroup():ThreadGroup"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getThreadGroup</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.ThreadGroup">ThreadGroup</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getThreadGroup():ThreadGroup" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#getUncaughtExceptionHandler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getUncaughtExceptionHandler():java.lang.Thread.UncaughtExceptionHandler"></a>
+      <a id="getUncaughtExceptionHandler():UncaughtExceptionHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUncaughtExceptionHandler</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Thread.UncaughtExceptionHandler">UncaughtExceptionHandler</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@getUncaughtExceptionHandler():java.lang.Thread.UncaughtExceptionHandler" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -456,6 +629,57 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="better.files.FileMonitor#interrupt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="interrupt():Unit"></a>
+      <a id="interrupt():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">interrupt</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@interrupt():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a> → Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#isAlive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isAlive():Boolean"></a>
+      <a id="isAlive():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isAlive</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@isAlive():Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#isDaemon" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDaemon():Boolean"></a>
+      <a id="isDaemon():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDaemon</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@isDaemon():Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -473,6 +697,92 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="java.lang.Thread#isInterrupted" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInterrupted():Boolean"></a>
+      <a id="isInterrupted():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInterrupted</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@isInterrupted():Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#join" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="join():Unit"></a>
+      <a id="join():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">join</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@join():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="java.lang.Thread#join" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="join(x$1:Long,x$2:Int):Unit"></a>
+      <a id="join(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">join</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@join(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="java.lang.Thread#join" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="join(x$1:Long):Unit"></a>
+      <a id="join(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">join</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@join(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -524,6 +834,91 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="better.files.FileMonitor#onCreate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onCreate(file:better.files.File):Unit"></a>
+      <a id="onCreate(File):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onCreate</span><span class="params">(<span name="file">file: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@onCreate(file:better.files.File):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
+    </li><li name="better.files.FileMonitor#onDelete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onDelete(file:better.files.File):Unit"></a>
+      <a id="onDelete(File):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onDelete</span><span class="params">(<span name="file">file: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@onDelete(file:better.files.File):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
+    </li><li name="better.files.FileWatcher#onException" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onException(exception:Throwable):Unit"></a>
+      <a id="onException(Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onException</span><span class="params">(<span name="exception">exception: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@onException(exception:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.FileWatcher">FileWatcher</a> → <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
+    </li><li name="better.files.FileMonitor#onModify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onModify(file:better.files.File):Unit"></a>
+      <a id="onModify(File):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onModify</span><span class="params">(<span name="file">file: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@onModify(file:better.files.File):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
+    </li><li name="better.files.FileMonitor#onUnknownEvent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onUnknownEvent(event:java.nio.file.WatchEvent[_],root:better.files.File):Unit"></a>
+      <a id="onUnknownEvent(WatchEvent[_],File):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onUnknownEvent</span><span class="params">(<span name="event">event: <span class="extype" name="java.nio.file.WatchEvent">WatchEvent</span>[_]</span>, <span name="root">root: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@onUnknownEvent(event:java.nio.file.WatchEvent[_],root:better.files.File):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
     </li><li name="akka.actor.Actor#postRestart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="postRestart(reason:&lt;?&gt;):Unit"></a>
       <a id="postRestart(Throwable):Unit"></a>
@@ -604,6 +999,23 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.FileWatcher">FileWatcher</a> → Actor</dd></dl></div>
+    </li><li name="better.files.FileMonitor#process" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="process(key:java.nio.file.WatchKey):Boolean"></a>
+      <a id="process(WatchKey):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">process</span><span class="params">(<span name="key">key: <span class="extype" name="java.nio.file.WatchKey">WatchKey</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@process(key:java.nio.file.WatchKey):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
     </li><li name="better.files.FileWatcher#receive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="receive:PartialFunction[Any,Unit]"></a>
       <a id="receive:PartialFunction[Any,Unit]"></a>
@@ -621,6 +1033,23 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.FileWatcher">FileWatcher</a> → Actor</dd></dl></div>
+    </li><li name="better.files.FileMonitor#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run():Unit"></a>
+      <a id="run():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@run():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a> → Thread → Runnable</dd></dl></div>
     </li><li name="akka.actor.Actor#self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="self:akka.actor.ActorRef"></a>
       <a id="self:ActorRef"></a>
@@ -655,6 +1084,125 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="better.files.FileMonitor#service" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="service:java.nio.file.WatchService"></a>
+      <a id="service:WatchService"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">service</span><span class="result">: <span class="extype" name="java.nio.file.WatchService">WatchService</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@service:java.nio.file.WatchService" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
+    </li><li name="java.lang.Thread#setContextClassLoader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setContextClassLoader(x$1:ClassLoader):Unit"></a>
+      <a id="setContextClassLoader(ClassLoader):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setContextClassLoader</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.ClassLoader">ClassLoader</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@setContextClassLoader(x$1:ClassLoader):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#setDaemon" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setDaemon(x$1:Boolean):Unit"></a>
+      <a id="setDaemon(Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setDaemon</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@setDaemon(x$1:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#setName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setName(x$1:String):Unit"></a>
+      <a id="setName(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setName</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@setName(x$1:String):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#setPriority" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setPriority(x$1:Int):Unit"></a>
+      <a id="setPriority(Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setPriority</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@setPriority(x$1:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="java.lang.Thread#setUncaughtExceptionHandler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setUncaughtExceptionHandler(x$1:java.lang.Thread.UncaughtExceptionHandler):Unit"></a>
+      <a id="setUncaughtExceptionHandler(UncaughtExceptionHandler):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setUncaughtExceptionHandler</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.Thread.UncaughtExceptionHandler">UncaughtExceptionHandler</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@setUncaughtExceptionHandler(x$1:java.lang.Thread.UncaughtExceptionHandler):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd></dl></div>
+    </li><li name="better.files.FileMonitor#start" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="start():Unit"></a>
+      <a id="start():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">start</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@start():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a> → Thread</dd></dl></div>
     </li><li name="akka.actor.Actor#supervisorStrategy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="supervisorStrategy:akka.actor.SupervisorStrategy"></a>
       <a id="supervisorStrategy:SupervisorStrategy"></a>
@@ -689,7 +1237,7 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="java.lang.Thread#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -705,7 +1253,7 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread → AnyRef → Any</dd></dl></div>
     </li><li name="akka.actor.Actor#unhandled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="unhandled(message:&lt;?&gt;):Unit"></a>
       <a id="unhandled(Any):Unit"></a>
@@ -792,34 +1340,175 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="better.files.FileWatcher#watcher" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="watcher:better.files.FileMonitor"></a>
-      <a id="watcher:FileMonitor"></a>
+    </li><li name="better.files.FileMonitor#watch" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="watch(aFile:better.files.File,depth:Int):Unit"></a>
+      <a id="watch(File,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">watcher</span><span class="result">: <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></span>
+        <span class="name">watch</span><span class="params">(<span name="aFile">aFile: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>, <span name="depth">depth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileWatcher@watcher:better.files.FileMonitor" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileWatcher@watch(aFile:better.files.File,depth:Int):Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
     </li></ol>
             </div>
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="java.lang.Thread#countStackFrames" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="countStackFrames():Int"></a>
+      <a id="countStackFrames():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">countStackFrames</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@countStackFrames():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li><li name="java.lang.Thread#destroy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="destroy():Unit"></a>
+      <a id="destroy():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">destroy</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@destroy():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li><li name="java.lang.Thread#resume" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resume():Unit"></a>
+      <a id="resume():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">resume</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@resume():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li><li name="java.lang.Thread#stop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stop(x$1:Throwable):Unit"></a>
+      <a id="stop(Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">stop</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@stop(x$1:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li><li name="java.lang.Thread#stop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stop():Unit"></a>
+      <a id="stop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">stop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@stop():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li><li name="java.lang.Thread#suspend" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="suspend():Unit"></a>
+      <a id="suspend():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">suspend</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.FileWatcher@suspend():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Thread</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
         <div class="parent" name="akka.actor.Actor">
               <h3>Inherited from <span class="extype" name="akka.actor.Actor">Actor</span></h3>
+            </div><div class="parent" name="better.files.FileMonitor">
+              <h3>Inherited from <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></h3>
+            </div><div class="parent" name="java.lang.Thread">
+              <h3>Inherited from <span class="extype" name="java.lang.Thread">Thread</span></h3>
+            </div><div class="parent" name="java.lang.Runnable">
+              <h3>Inherited from <span class="extype" name="java.lang.Runnable">Runnable</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

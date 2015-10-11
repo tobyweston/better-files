@@ -211,7 +211,7 @@ This class's onDelete, onCreate, onModify etc are available to be overridden
     </span>
       
     </li><li name="better.files.FileWatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FileWatcherextendsActor"></a>
+      <a id="FileWatcherextendsFileMonitorwithActor"></a>
       <a id="FileWatcher:FileWatcher"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -219,10 +219,10 @@ This class's onDelete, onCreate, onModify etc are available to be overridden
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FileWatcher.html"><span class="name">FileWatcher</span></a><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span></span>
+        <a href="FileWatcher.html"><span class="name">FileWatcher</span></a><span class="result"> extends <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a> with <span class="extype" name="akka.actor.Actor">Actor</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@FileWatcherextendsActor" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.package@FileWatcherextendsFileMonitorwithActor" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -707,7 +707,7 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">stop</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result">: <a href="FileWatcher$$RemoveCallback.html" class="extype" name="better.files.FileWatcher.RemoveCallback">RemoveCallback</a></span>
+        <span class="name">stop</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[(better.files.FileWatcher.Event,better.files.File),Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result">: <a href="FileWatcher$$RemoveCallback.html" class="extype" name="better.files.FileWatcher.RemoveCallback">RemoveCallback</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.package@stop(event:better.files.FileWatcher.Event,callback:better.files.FileWatcher.Callback):better.files.FileWatcher.RemoveCallback" title="Permalink" target="_top">
@@ -741,7 +741,7 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">when</span><span class="params">(<span name="events">events: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>*</span>)</span><span class="params">(<span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result">: <a href="FileWatcher$$RegisterCallback.html" class="extype" name="better.files.FileWatcher.RegisterCallback">RegisterCallback</a></span>
+        <span class="name">when</span><span class="params">(<span name="events">events: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>*</span>)</span><span class="params">(<span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[(better.files.FileWatcher.Event,better.files.File),Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result">: <a href="FileWatcher$$RegisterCallback.html" class="extype" name="better.files.FileWatcher.RegisterCallback">RegisterCallback</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.package@when(events:better.files.FileWatcher.Event*)(callback:better.files.FileWatcher.Callback):better.files.FileWatcher.RegisterCallback" title="Permalink" target="_top">

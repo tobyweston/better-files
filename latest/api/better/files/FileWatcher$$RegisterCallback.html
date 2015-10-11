@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">RegisterCallback</span><span class="params">(<span name="events">events: <span class="extype" name="scala.Seq">Seq</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>]</span>, <span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">RegisterCallback</span><span class="params">(<span name="events">events: <span class="extype" name="scala.Seq">Seq</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>]</span>, <span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[(better.files.FileWatcher.Event,better.files.File),Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -97,7 +97,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">RegisterCallback</span><span class="params">(<span name="events">events: <span class="extype" name="scala.Seq">Seq</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>]</span>, <span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span>
+        <span class="name">RegisterCallback</span><span class="params">(<span name="events">events: <span class="extype" name="scala.Seq">Seq</span>[<a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>]</span>, <span name="callback">callback: <a href="FileWatcher$.html#Callback=PartialFunction[(better.files.FileWatcher.Event,better.files.File),Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.FileWatcher$$RegisterCallback@&lt;init&gt;(events:Seq[better.files.FileWatcher.Event],callback:better.files.FileWatcher.Callback):better.files.FileWatcher.RegisterCallback" title="Permalink" target="_top">
@@ -191,7 +191,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">callback</span><span class="result">: <a href="FileWatcher$.html#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>
+        <span class="name">callback</span><span class="result">: <a href="FileWatcher$.html#Callback=PartialFunction[(better.files.FileWatcher.Event,better.files.File),Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.FileWatcher$$RegisterCallback@callback:better.files.FileWatcher.Callback" title="Permalink" target="_top">

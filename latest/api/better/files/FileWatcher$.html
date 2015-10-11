@@ -110,7 +110,7 @@
     </span>
       
     </li><li name="better.files.FileWatcher.Event" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Event=java.nio.file.WatchEvent.Kind[_]"></a>
+      <a id="Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]"></a>
       <a id="Event:Event"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -118,10 +118,10 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Event</span><span class="result"> = <span class="extype" name="java.nio.file.WatchEvent.Kind">Kind</span>[_]</span>
+        <span class="name">Event</span><span class="result"> = <span class="extype" name="java.nio.file.WatchEvent.Kind">Kind</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileWatcher$@Event=java.nio.file.WatchEvent.Kind[_]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileWatcher$@Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -135,7 +135,7 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">FileEvent</span><span class="result"> = (<a href="#Event=java.nio.file.WatchEvent.Kind[_]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>, <a href="package$$File.html" class="extype" name="better.files.File">File</a>)</span>
+        <span class="name">FileEvent</span><span class="result"> = (<a href="#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>, <a href="package$$File.html" class="extype" name="better.files.File">File</a>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.FileWatcher$@FileEvent=(better.files.FileWatcher.Event,better.files.File)" title="Permalink" target="_top">
@@ -152,7 +152,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="FileWatcher$$RegisterCallback.html"><span class="name">RegisterCallback</span></a><span class="params">(<span name="events">events: <span class="extype" name="scala.Seq">Seq</span>[<a href="#Event=java.nio.file.WatchEvent.Kind[_]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>]</span>, <span name="callback">callback: <a href="#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="FileWatcher$$RegisterCallback.html"><span class="name">RegisterCallback</span></a><span class="params">(<span name="events">events: <span class="extype" name="scala.Seq">Seq</span>[<a href="#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a>]</span>, <span name="callback">callback: <a href="#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.FileWatcher$@RegisterCallbackextendsProductwithSerializable" title="Permalink" target="_top">
@@ -160,19 +160,19 @@
       </a>
     </span>
       
-    </li><li name="better.files.FileWatcher.UnRegisterCallback" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="UnRegisterCallbackextendsProductwithSerializable"></a>
-      <a id="UnRegisterCallback:UnRegisterCallback"></a>
+    </li><li name="better.files.FileWatcher.RemoveCallback" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RemoveCallbackextendsProductwithSerializable"></a>
+      <a id="RemoveCallback:RemoveCallback"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="FileWatcher$$UnRegisterCallback.html"><span class="name">UnRegisterCallback</span></a><span class="params">(<span name="event">event: <a href="#Event=java.nio.file.WatchEvent.Kind[_]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="callback">callback: <a href="#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="FileWatcher$$RemoveCallback.html"><span class="name">RemoveCallback</span></a><span class="params">(<span name="event">event: <a href="#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="callback">callback: <a href="#Callback=PartialFunction[better.files.FileWatcher.FileEvent,Unit]" class="extmbr" name="better.files.FileWatcher.Callback">Callback</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileWatcher$@UnRegisterCallbackextendsProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileWatcher$@RemoveCallbackextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

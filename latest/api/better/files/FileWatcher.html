@@ -101,7 +101,7 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">FileWatcher</span><span class="params">(<span name="file">file: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>, <span name="recursive">recursive: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="name">FileWatcher</span><span class="params">(<span name="file">file: <a href="package$$File.html" class="extype" name="better.files.File">File</a></span>, <span name="recursive">recursive: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.FileWatcher@&lt;init&gt;(file:better.files.File,recursive:Boolean):better.files.FileWatcher" title="Permalink" target="_top">
@@ -398,7 +398,11 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.FileWatcher">FileWatcher</a> → <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
+      <p class="shortcomment cmt">Dispatch a StandardWatchEventKind to an appropriate callback
+Override this if you don't want to manually handle onDelete/onCreate/onModify separately
+</p><div class="fullcomment"><div class="comment cmt"><p>Dispatch a StandardWatchEventKind to an appropriate callback
+Override this if you don't want to manually handle onDelete/onCreate/onModify separately
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.FileWatcher">FileWatcher</a> → <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>

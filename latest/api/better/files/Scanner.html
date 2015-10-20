@@ -570,7 +570,7 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       
-    </li><li name="better.files.Scanner#nextLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.Scanner#nextLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nextLine():Option[String]"></a>
       <a id="nextLine():Option[String]"></a>
       <h4 class="signature">
@@ -586,7 +586,13 @@ See: http://codeforces.com/blog/entry/7018
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">This is different from Java's scanner.nextLine
+The Java one is a misnomer since it actually travels to end of current line and returns that
+This is a source of much confusion.</p><div class="fullcomment"><div class="comment cmt"><p>This is different from Java's scanner.nextLine
+The Java one is a misnomer since it actually travels to end of current line and returns that
+This is a source of much confusion. See: http://stackoverflow.com/questions/5032356/using-scanner-nextline
+This one actually does return the next line
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>returns the next line</p></dd></dl></div>
     </li><li name="better.files.Scanner#nextMatch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nextMatch(f:String=&gt;Boolean):Option[String]"></a>
       <a id="nextMatch((String)⇒Boolean):Option[String]"></a>

@@ -314,23 +314,24 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       
-    </li><li name="better.files.PeekableStringTokenizer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="PeekableStringTokenizerextendsStringTokenizer"></a>
-      <a id="PeekableStringTokenizer:PeekableStringTokenizer"></a>
+    </li><li name="better.files.PeekableIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PeekableIterator[A]extendsIterator[A]"></a>
+      <a id="PeekableIterator[A]:PeekableIterator[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PeekableStringTokenizer.html"><span class="name">PeekableStringTokenizer</span></a><span class="result"> extends <span class="extype" name="java.util.StringTokenizer">StringTokenizer</span></span>
+        <a href="PeekableIterator.html"><span class="name">PeekableIterator</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="better.files.PeekableIterator.A">A</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@PeekableStringTokenizerextendsStringTokenizer" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.package@PeekableIterator[A]extendsIterator[A]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">An util to convert an iterator to one that supports peeking
+</p>
     </li><li name="better.files.ReaderOps" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ReaderOpsextendsAnyRef"></a>
       <a id="ReaderOps:ReaderOps"></a>
@@ -713,6 +714,23 @@ See: http://codeforces.com/blog/entry/7018
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.package@tmp:better.files.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files#tokenizerToIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tokenizerToIterator(s:java.util.StringTokenizer):Iterator[String]"></a>
+      <a id="tokenizerToIterator(StringTokenizer):Iterator[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tokenizerToIterator</span><span class="params">(<span name="s">s: <span class="extype" name="java.util.StringTokenizer">StringTokenizer</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package@tokenizerToIterator(s:java.util.StringTokenizer):Iterator[String]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

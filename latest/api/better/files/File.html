@@ -510,18 +510,18 @@
     </span>
       
     </li><li name="better.files.File#bufferedWriter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bufferedWriter(implicitcodec:scala.io.Codec):better.files.ManagedResource[java.io.BufferedWriter]"></a>
-      <a id="bufferedWriter(Codec):ManagedResource[BufferedWriter]"></a>
+      <a id="bufferedWriter(implicitcodec:scala.io.Codec,implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.BufferedWriter]"></a>
+      <a id="bufferedWriter(Codec,OpenOptions):ManagedResource[BufferedWriter]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.BufferedWriter">BufferedWriter</span>]</span>
+        <span class="name">bufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>, <span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.BufferedWriter">BufferedWriter</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@bufferedWriter(implicitcodec:scala.io.Codec):better.files.ManagedResource[java.io.BufferedWriter]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@bufferedWriter(implicitcodec:scala.io.Codec,implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.BufferedWriter]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -741,18 +741,18 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>destination</p></dd></dl></div>
     </li><li name="better.files.File#createChild" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="createChild(child:String,asDirectory:Boolean):better.files.File"></a>
-      <a id="createChild(String,Boolean):File"></a>
+      <a id="createChild(child:String,asDirectory:Boolean)(implicitattributes:better.files.File.Attributes):better.files.File"></a>
+      <a id="createChild(String,Boolean)(Attributes):File"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createChild</span><span class="params">(<span name="child">child: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="asDirectory">asDirectory: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">createChild</span><span class="params">(<span name="child">child: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="asDirectory">asDirectory: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@createChild(child:String,asDirectory:Boolean):better.files.File" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@createChild(child:String,asDirectory:Boolean)(implicitattributes:better.files.File.Attributes):better.files.File" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1138,18 +1138,18 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.File">File</a> → AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#inputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="inputStream:better.files.ManagedResource[java.io.InputStream]"></a>
-      <a id="inputStream:ManagedResource[InputStream]"></a>
+      <a id="inputStream(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.InputStream]"></a>
+      <a id="inputStream(OpenOptions):ManagedResource[InputStream]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">inputStream</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.InputStream">InputStream</span>]</span>
+        <span class="name">inputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.InputStream">InputStream</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@inputStream:better.files.ManagedResource[java.io.InputStream]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@inputStream(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.InputStream]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1838,18 +1838,18 @@ Also works for directories
     </span>
       
     </li><li name="better.files.File#newBufferedWriter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newBufferedWriter(implicitcodec:scala.io.Codec):java.io.BufferedWriter"></a>
-      <a id="newBufferedWriter(Codec):BufferedWriter"></a>
+      <a id="newBufferedWriter(implicitcodec:scala.io.Codec,implicitopenOptions:better.files.File.OpenOptions):java.io.BufferedWriter"></a>
+      <a id="newBufferedWriter(Codec,OpenOptions):BufferedWriter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newBufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedWriter">BufferedWriter</span></span>
+        <span class="name">newBufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>, <span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedWriter">BufferedWriter</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@newBufferedWriter(implicitcodec:scala.io.Codec):java.io.BufferedWriter" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@newBufferedWriter(implicitcodec:scala.io.Codec,implicitopenOptions:better.files.File.OpenOptions):java.io.BufferedWriter" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1906,35 +1906,35 @@ Also works for directories
     </span>
       
     </li><li name="better.files.File#newInputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newInputStream:java.io.InputStream"></a>
-      <a id="newInputStream:InputStream"></a>
+      <a id="newInputStream(implicitopenOptions:better.files.File.OpenOptions):java.io.InputStream"></a>
+      <a id="newInputStream(OpenOptions):InputStream"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newInputStream</span><span class="result">: <span class="extype" name="java.io.InputStream">InputStream</span></span>
+        <span class="name">newInputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.InputStream">InputStream</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@newInputStream:java.io.InputStream" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@newInputStream(implicitopenOptions:better.files.File.OpenOptions):java.io.InputStream" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="better.files.File#newOutputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newOutputStream:java.io.OutputStream"></a>
-      <a id="newOutputStream:OutputStream"></a>
+      <a id="newOutputStream(implicitopenOptions:better.files.File.OpenOptions):java.io.OutputStream"></a>
+      <a id="newOutputStream(OpenOptions):OutputStream"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newOutputStream</span><span class="result">: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>
+        <span class="name">newOutputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@newOutputStream:java.io.OutputStream" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@newOutputStream(implicitopenOptions:better.files.File.OpenOptions):java.io.OutputStream" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -2042,18 +2042,18 @@ Also works for directories
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="better.files.File#outputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="outputStream:better.files.ManagedResource[java.io.OutputStream]"></a>
-      <a id="outputStream:ManagedResource[OutputStream]"></a>
+      <a id="outputStream(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.OutputStream]"></a>
+      <a id="outputStream(OpenOptions):ManagedResource[OutputStream]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">outputStream</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.OutputStream">OutputStream</span>]</span>
+        <span class="name">outputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.OutputStream">OutputStream</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@outputStream:better.files.ManagedResource[java.io.OutputStream]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@outputStream(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.OutputStream]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

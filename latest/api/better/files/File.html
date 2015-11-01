@@ -2539,35 +2539,35 @@ NOTE: This API returns null if this file is the root;
       <p class="shortcomment cmt">Similar to the UNIX command touch - create this file if it does not exist and set its last modification time
 </p>
     </li><li name="better.files.File#unzip" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="unzip():better.files.File"></a>
-      <a id="unzip():File"></a>
+      <a id="unzip()(implicitcodec:scala.io.Codec):better.files.File"></a>
+      <a id="unzip()(Codec):File"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unzip</span><span class="params">()</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">unzip</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@unzip():better.files.File" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@unzip()(implicitcodec:scala.io.Codec):better.files.File" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">unzip to a temporary zip file</p><div class="fullcomment"><div class="comment cmt"><p>unzip to a temporary zip file</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the zip file</p></dd></dl></div>
     </li><li name="better.files.File#unzipTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="unzipTo(destination:better.files.File):better.files.File"></a>
-      <a id="unzipTo(File):File"></a>
+      <a id="unzipTo(destination:better.files.File)(implicitcodec:scala.io.Codec):better.files.File"></a>
+      <a id="unzipTo(File)(Codec):File"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unzipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">unzipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@unzipTo(destination:better.files.File):better.files.File" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@unzipTo(destination:better.files.File)(implicitcodec:scala.io.Codec):better.files.File" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -2729,35 +2729,35 @@ NOTE: This API returns null if this file is the root;
     </span>
       <p class="shortcomment cmt">Write byte array to file.</p><div class="fullcomment"><div class="comment cmt"><p>Write byte array to file. For large files, piping in streams is recommended</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>this</p></dd></dl></div>
     </li><li name="better.files.File#zip" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="zip(compressionLevel:Int):better.files.File"></a>
-      <a id="zip(Int):File"></a>
+      <a id="zip(compressionLevel:Int)(implicitcodec:scala.io.Codec):better.files.File"></a>
+      <a id="zip(Int)(Codec):File"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">zip</span><span class="params">(<span name="compressionLevel">compressionLevel: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Deflater.DEFAULT_COMPRESSION</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">zip</span><span class="params">(<span name="compressionLevel">compressionLevel: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Deflater.DEFAULT_COMPRESSION</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@zip(compressionLevel:Int):better.files.File" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@zip(compressionLevel:Int)(implicitcodec:scala.io.Codec):better.files.File" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">zip to a temp directory</p><div class="fullcomment"><div class="comment cmt"><p>zip to a temp directory</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the target directory</p></dd></dl></div>
     </li><li name="better.files.File#zipTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="zipTo(destination:better.files.File,compressionLevel:Int):better.files.File"></a>
-      <a id="zipTo(File,Int):File"></a>
+      <a id="zipTo(destination:better.files.File,compressionLevel:Int)(implicitcodec:scala.io.Codec):better.files.File"></a>
+      <a id="zipTo(File,Int)(Codec):File"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">zipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>, <span name="compressionLevel">compressionLevel: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Deflater.DEFAULT_COMPRESSION</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">zipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>, <span name="compressionLevel">compressionLevel: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Deflater.DEFAULT_COMPRESSION</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@zipTo(destination:better.files.File,compressionLevel:Int):better.files.File" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@zipTo(destination:better.files.File,compressionLevel:Int)(implicitcodec:scala.io.Codec):better.files.File" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

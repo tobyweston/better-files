@@ -1616,23 +1616,27 @@ Also works for directories
       </a>
     </span>
       
-    </li><li name="better.files.File#lines" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="lines(implicitcodec:scala.io.Codec):Iterator[String]"></a>
-      <a id="lines(Codec):Iterator[String]"></a>
+    </li><li name="better.files.File#lines" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lines(implicitcodec:scala.io.Codec):Traversable[String]"></a>
+      <a id="lines(Codec):Traversable[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lines</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">lines</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@lines(implicitcodec:scala.io.Codec):Iterator[String]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@lines(implicitcodec:scala.io.Codec):Traversable[String]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Load all lines from this file
+Note: Large files may cause an OutOfMemory in which case, use the streaming version @see lineIterator
+</p><div class="fullcomment"><div class="comment cmt"><p>Load all lines from this file
+Note: Large files may cause an OutOfMemory in which case, use the streaming version @see lineIterator
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>all lines in this file</p></dd></dl></div>
     </li><li name="better.files.File#linkTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="linkTo(destination:better.files.File,symbolic:Boolean)(implicitattributes:better.files.File.Attributes):better.files.File"></a>
       <a id="linkTo(File,Boolean)(Attributes):File"></a>

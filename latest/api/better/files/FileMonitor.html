@@ -94,7 +94,7 @@ This class's onDelete, onCreate, onModify etc are available to be overridden
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="better.files.FileMonitor#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(file:better.files.File,recursive:Boolean):better.files.FileMonitor"></a>
+      <a id="&lt;init&gt;(root:better.files.File,recursive:Boolean):better.files.FileMonitor"></a>
       <a id="&lt;init&gt;:FileMonitor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -102,16 +102,16 @@ This class's onDelete, onCreate, onModify etc are available to be overridden
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">FileMonitor</span><span class="params">(<span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="recursive">recursive: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span>
+        <span class="name">FileMonitor</span><span class="params">(<span name="root">root: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="recursive">recursive: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileMonitor@&lt;init&gt;(file:better.files.File,recursive:Boolean):better.files.FileMonitor" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileMonitor@&lt;init&gt;(root:better.files.File,recursive:Boolean):better.files.FileMonitor" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="better.files.FileMonitor#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(file:better.files.File,maxDepth:Int):better.files.FileMonitor"></a>
+      <a id="&lt;init&gt;(root:better.files.File,maxDepth:Int):better.files.FileMonitor"></a>
       <a id="&lt;init&gt;:FileMonitor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -119,10 +119,10 @@ This class's onDelete, onCreate, onModify etc are available to be overridden
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">FileMonitor</span><span class="params">(<span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="maxDepth">maxDepth: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="name">FileMonitor</span><span class="params">(<span name="root">root: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="maxDepth">maxDepth: <span class="extype" name="scala.Int">Int</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileMonitor@&lt;init&gt;(file:better.files.File,maxDepth:Int):better.files.FileMonitor" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileMonitor@&lt;init&gt;(root:better.files.File,maxDepth:Int):better.files.FileMonitor" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1040,7 +1040,7 @@ Override this if you don't want to manually handle onDelete/onCreate/onModify se
               
         </dd></dl></div>
     </li><li name="better.files.FileMonitor#watch" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="watch(aFile:better.files.File,depth:Int):Unit"></a>
+      <a id="watch(file:better.files.File,depth:Int):Unit"></a>
       <a id="watch(File,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1048,10 +1048,10 @@ Override this if you don't want to manually handle onDelete/onCreate/onModify se
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">watch</span><span class="params">(<span name="aFile">aFile: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="depth">depth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">watch</span><span class="params">(<span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="depth">depth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.FileMonitor@watch(aFile:better.files.File,depth:Int):Unit" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.FileMonitor@watch(file:better.files.File,depth:Int):Unit" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

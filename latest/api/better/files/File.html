@@ -841,7 +841,7 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Deletes this file or directory</p><div class="fullcomment"><div class="comment cmt"><p>Deletes this file or directory</p></div><dl class="paramcmts block"><dt class="param">swallowIOExceptions</dt><dd class="cmt"><p>If this is set to true, any exception thrown is swallwed</p></dd></dl></div>
+      <p class="shortcomment cmt">Deletes this file or directory</p><div class="fullcomment"><div class="comment cmt"><p>Deletes this file or directory</p></div><dl class="paramcmts block"><dt class="param">swallowIOExceptions</dt><dd class="cmt"><p>If this is set to true, any exception thrown is swallowed</p></dd></dl></div>
     </li><li name="better.files.File#digest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="digest(algorithm:String):Array[Byte]"></a>
       <a id="digest(String):Array[Byte]"></a>
@@ -1070,22 +1070,22 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#glob" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="glob(pattern:String,syntax:String,swallowIOExceptions:Boolean):better.files.Files"></a>
-      <a id="glob(String,String,Boolean):Files"></a>
+      <a id="glob(pattern:String,syntax:String):better.files.Files"></a>
+      <a id="glob(String,String):Files"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">glob</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syntax">syntax: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;glob&quot;</span></span>, <span name="swallowIOExceptions">swallowIOExceptions: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
+        <span class="name">glob</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syntax">syntax: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;glob&quot;</span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@glob(pattern:String,syntax:String,swallowIOExceptions:Boolean):better.files.Files" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@glob(pattern:String,syntax:String):better.files.Files" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Util to glob from this file's path</p><div class="fullcomment"><div class="comment cmt"><p>Util to glob from this file's path</p></div><dl class="paramcmts block"><dt class="param">swallowIOExceptions</dt><dd class="cmt"><p>when set to true, any file visit exceptions (e.g. a read or permission error) would be silently ignored</p></dd><dt>returns</dt><dd class="cmt"><p>Set of files that matched</p></dd></dl></div>
+      <p class="shortcomment cmt">Util to glob from this file's path</p><div class="fullcomment"><div class="comment cmt"><p>Util to glob from this file's path</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Set of files that matched</p></dd></dl></div>
     </li><li name="better.files.File#group" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="group(implicitlinkOptions:better.files.File.Links):java.nio.file.attribute.GroupPrincipal"></a>
       <a id="group(Links):GroupPrincipal"></a>

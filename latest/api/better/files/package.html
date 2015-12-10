@@ -174,25 +174,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
-    </li><li name="better.files.FileMonitor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="FileMonitorextendsThread"></a>
-      <a id="FileMonitor:FileMonitor"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="FileMonitor.html"><span class="name">FileMonitor</span></a><span class="result"> extends <span class="extype" name="java.lang.Thread">Thread</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@FileMonitorextendsThread" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A thread that can monitor a file (or a directory)
-This class's onDelete, onCreate, onModify etc are available to be overridden
-</p>
     </li><li name="better.files.Implicits.FileOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="FileOpsextendsAnyRef"></a>
       <a id="FileOps:FileOps"></a>
@@ -211,7 +192,7 @@ This class's onDelete, onCreate, onModify etc are available to be overridden
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
     </li><li name="better.files.FileWatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FileWatcherextendsFileMonitorwithActor"></a>
+      <a id="FileWatcherextendsActor"></a>
       <a id="FileWatcher:FileWatcher"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -219,10 +200,10 @@ This class's onDelete, onCreate, onModify etc are available to be overridden
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FileWatcher.html"><span class="name">FileWatcher</span></a><span class="result"> extends <a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a> with <span class="extype" name="akka.actor.Actor">Actor</span></span>
+        <a href="FileWatcher.html"><span class="name">FileWatcher</span></a><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@FileWatcherextendsFileMonitorwithActor" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.package@FileWatcherextendsActor" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -421,6 +402,24 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
+    </li><li name="better.files.ThreadBackedFileMonitor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ThreadBackedFileMonitorextendsFile.Monitor"></a>
+      <a id="ThreadBackedFileMonitor:ThreadBackedFileMonitor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ThreadBackedFileMonitor.html"><span class="name">ThreadBackedFileMonitor</span></a><span class="result"> extends <a href="File$$Monitor.html" class="extype" name="better.files.File.Monitor">Monitor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package@ThreadBackedFileMonitorextendsFile.Monitor" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A thread based implementation of the FileMonitor
+</p>
     </li><li name="better.files.Implicits.WriterOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="WriterOpsextendsAnyRef"></a>
       <a id="WriterOps:WriterOps"></a>

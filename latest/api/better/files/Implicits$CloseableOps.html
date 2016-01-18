@@ -198,17 +198,16 @@
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Lightweight automatic resource management
-Closes the resource when done
-e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Lightweight automatic resource management
-Closes the resource when done
-e.g.
+      <p class="shortcomment cmt">Overrides <code>foreach</code> such that it closes the resource
+when done, or if an exception occurs.</p><div class="fullcomment"><div class="comment cmt"><p>Overrides <code>foreach</code> such that it closes the resource
+when done, or if an exception occurs.</p><p>e.g.
 <pre>
 for {
   in <- file.newInputStream.autoClosed
 } in.write(bytes)
 // in is closed now
-</pre></p></div></div>
+</pre></p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+FIXME: there is no reason to swallow all exceptions here.</p></dd></dl></div>
     </li><li name="better.files.Implicits.CloseableOps#autoClosedIterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoClosedIterator[B](next:A=&gt;B)(hasNext:B=&gt;Boolean):Iterator[B]"></a>
       <a id="autoClosedIterator[B]((A)⇒B)((B)⇒Boolean):Iterator[B]"></a>
@@ -225,9 +224,9 @@ for {
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Utility to make a closeable an iterator (auto close when done)
-e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Utility to make a closeable an iterator (auto close when done)
-e.g.
+      <p class="shortcomment cmt">Provides and iterator that closes the underlying resource
+when done.</p><div class="fullcomment"><div class="comment cmt"><p>Provides and iterator that closes the underlying resource
+when done.</p><p>e.g.
 <pre>
 inputStream.autoClosedIterator(_.read())(_ != -1).map(_.toByte)
 </pre>

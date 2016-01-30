@@ -614,18 +614,18 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>checksum of this file (or directory) in hex format</p></dd></dl></div>
     </li><li name="better.files.File#children" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="children:Iterator[better.files.File]"></a>
-      <a id="children:Iterator[File]"></a>
+      <a id="children:better.files.Files"></a>
+      <a id="children:Files"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">children</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="" class="extype" name="better.files.File">File</a>]</span>
+        <span class="name">children</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@children:Iterator[better.files.File]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@children:better.files.Files" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -877,18 +877,18 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
     </span>
       
     </li><li name="better.files.File#entries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="entries:Iterator[better.files.File]"></a>
-      <a id="entries:Iterator[File]"></a>
+      <a id="entries:better.files.Files"></a>
+      <a id="entries:Files"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">entries</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="" class="extype" name="better.files.File">File</a>]</span>
+        <span class="name">entries</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@entries:Iterator[better.files.File]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@entries:better.files.Files" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1616,6 +1616,25 @@ Also works for directories
       </a>
     </span>
       
+    </li><li name="better.files.File#lineIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lineIterator(implicitcodec:scala.io.Codec):Iterator[String]"></a>
+      <a id="lineIterator(Codec):Iterator[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lineIterator</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@lineIterator(implicitcodec:scala.io.Codec):Iterator[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Iterate over lines in a file (auto-close stream on complete)
+NOTE: If the iteration is partial, it may leave a stream open
+      If you want partial iteration use @see lines()</p>
     </li><li name="better.files.File#lines" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="lines(implicitcodec:scala.io.Codec):Traversable[String]"></a>
       <a id="lines(Codec):Traversable[String]"></a>
@@ -1655,18 +1674,18 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
     </span>
       
     </li><li name="better.files.File#list" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="list:Iterator[better.files.File]"></a>
-      <a id="list:Iterator[File]"></a>
+      <a id="list:better.files.Files"></a>
+      <a id="list:Files"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">list</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="" class="extype" name="better.files.File">File</a>]</span>
+        <span class="name">list</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@list:Iterator[better.files.File]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@list:better.files.Files" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

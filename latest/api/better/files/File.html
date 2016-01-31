@@ -1070,18 +1070,18 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#glob" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="glob(pattern:String,syntax:String):better.files.Files"></a>
-      <a id="glob(String,String):Files"></a>
+      <a id="glob(pattern:String)(implicitsyntax:better.files.File.PathMatcherSyntax):better.files.Files"></a>
+      <a id="glob(String)(PathMatcherSyntax):Files"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">glob</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="syntax">syntax: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;glob&quot;</span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
+        <span class="name">glob</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="syntax">syntax: <a href="File$$PathMatcherSyntax.html" class="extype" name="better.files.File.PathMatcherSyntax">PathMatcherSyntax</a> = <span class="symbol"><span class="name"><a href="File$.html">File.PathMatcherSyntax.default</a></span></span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@glob(pattern:String,syntax:String):better.files.Files" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@glob(pattern:String)(implicitsyntax:better.files.File.PathMatcherSyntax):better.files.Files" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -2199,6 +2199,23 @@ NOTE: This API returns null if this file is the root;
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@pathAsString:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#pathMatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pathMatcher(syntax:better.files.File.PathMatcherSyntax)(pattern:String):java.nio.file.PathMatcher"></a>
+      <a id="pathMatcher(PathMatcherSyntax)(String):PathMatcher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pathMatcher</span><span class="params">(<span name="syntax">syntax: <a href="File$$PathMatcherSyntax.html" class="extype" name="better.files.File.PathMatcherSyntax">PathMatcherSyntax</a></span>)</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.nio.file.PathMatcher">PathMatcher</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@pathMatcher(syntax:better.files.File.PathMatcherSyntax)(pattern:String):java.nio.file.PathMatcher" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

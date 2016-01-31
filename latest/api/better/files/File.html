@@ -1117,6 +1117,57 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
       </a>
     </span>
       
+    </li><li name="better.files.File#hasLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hasLock(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean"></a>
+      <a id="hasLock(RandomAccessMode,Long,Long,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasLock</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a></span>, <span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@hasLock(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#hasReadLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hasReadLock(position:Long,size:Long,isShared:Boolean):Boolean"></a>
+      <a id="hasReadLock(Long,Long,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasReadLock</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@hasReadLock(position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#hasWriteLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hasWriteLock(position:Long,size:Long,isShared:Boolean):Boolean"></a>
+      <a id="hasWriteLock(Long,Long,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasWriteLock</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@hasWriteLock(position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -1960,18 +2011,18 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
     </span>
       
     </li><li name="better.files.File#newRandomAccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newRandomAccess(mode:String):java.io.RandomAccessFile"></a>
-      <a id="newRandomAccess(String):RandomAccessFile"></a>
+      <a id="newRandomAccess(mode:better.files.File.RandomAccessMode):java.io.RandomAccessFile"></a>
+      <a id="newRandomAccess(RandomAccessMode):RandomAccessFile"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newRandomAccess</span><span class="params">(<span name="mode">mode: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;r&quot;</span></span>)</span><span class="result">: <span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span></span>
+        <span class="name">newRandomAccess</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a> = <span class="symbol"><span class="name"><a href="File$.html">File.RandomAccessMode.read</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@newRandomAccess(mode:String):java.io.RandomAccessFile" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@newRandomAccess(mode:better.files.File.RandomAccessMode):java.io.RandomAccessFile" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -2270,18 +2321,18 @@ NOTE: This API returns null if this file is the root;
     </span>
       
     </li><li name="better.files.File#randomAccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="randomAccess(mode:String):better.files.ManagedResource[java.io.RandomAccessFile]"></a>
-      <a id="randomAccess(String):ManagedResource[RandomAccessFile]"></a>
+      <a id="randomAccess(mode:better.files.File.RandomAccessMode):better.files.ManagedResource[java.io.RandomAccessFile]"></a>
+      <a id="randomAccess(RandomAccessMode):ManagedResource[RandomAccessFile]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">randomAccess</span><span class="params">(<span name="mode">mode: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;r&quot;</span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span>]</span>
+        <span class="name">randomAccess</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a> = <span class="symbol"><span class="name"><a href="File$.html">File.RandomAccessMode.read</a></span></span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@randomAccess(mode:String):better.files.ManagedResource[java.io.RandomAccessFile]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@randomAccess(mode:better.files.File.RandomAccessMode):better.files.ManagedResource[java.io.RandomAccessFile]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

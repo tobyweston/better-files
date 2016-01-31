@@ -2129,7 +2129,7 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
       </a>
     </span>
       
-    </li><li name="better.files.File#parent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.File#parent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parent:better.files.File"></a>
       <a id="parent:File"></a>
       <h4 class="signature">
@@ -2147,8 +2147,26 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
     </span>
       <p class="shortcomment cmt">Return parent of this file
 NOTE: This API returns null if this file is the root;
-      please wrap it in an Option if you expect to handle such behaviour
-</p>
+      please wrap it in an Option if you expect to handle such behaviour</p><div class="fullcomment"><div class="comment cmt"><p>Return parent of this file
+NOTE: This API returns null if this file is the root;
+      please wrap it in an Option if you expect to handle such behaviour</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>parentOption</p></span></dd></dl></div>
+    </li><li name="better.files.File#parentOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parentOption:Option[better.files.File]"></a>
+      <a id="parentOption:Option[File]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parentOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="" class="extype" name="better.files.File">File</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@parentOption:Option[better.files.File]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Some(parent) of this file or None if this is the root and thus has no parent</p></dd></dl></div>
     </li><li name="better.files.File#path" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="path:java.nio.file.Path"></a>
       <a id="path:Path"></a>

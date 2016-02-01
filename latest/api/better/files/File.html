@@ -1117,57 +1117,6 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
       </a>
     </span>
       
-    </li><li name="better.files.File#hasLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasLock(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean"></a>
-      <a id="hasLock(RandomAccessMode,Long,Long,Boolean):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hasLock</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a></span>, <span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@hasLock(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="better.files.File#hasReadLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasReadLock(position:Long,size:Long,isShared:Boolean):Boolean"></a>
-      <a id="hasReadLock(Long,Long,Boolean):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hasReadLock</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@hasReadLock(position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="better.files.File#hasWriteLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasWriteLock(position:Long,size:Long,isShared:Boolean):Boolean"></a>
-      <a id="hasWriteLock(Long,Long,Boolean):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hasWriteLock</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@hasWriteLock(position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="better.files.File#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -1355,6 +1304,23 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="better.files.File#isLocked" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isLocked(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean"></a>
+      <a id="isLocked(RandomAccessMode,Long,Long,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isLocked</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a></span>, <span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@isLocked(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#isOtherExecutable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOtherExecutable(implicitlinkOptions:better.files.File.LinkOptions):Boolean"></a>
       <a id="isOtherExecutable(LinkOptions):Boolean"></a>
@@ -1470,6 +1436,23 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@isParentOf(child:better.files.File):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#isReadLocked" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isReadLocked(position:Long,size:Long,isShared:Boolean):Boolean"></a>
+      <a id="isReadLocked(Long,Long,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isReadLocked</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@isReadLocked(position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1609,6 +1592,23 @@ Also works for directories
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@isSymbolicLink:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#isWriteLocked" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isWriteLocked(position:Long,size:Long,isShared:Boolean):Boolean"></a>
+      <a id="isWriteLocked(Long,Long,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isWriteLocked</span><span class="params">(<span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@isWriteLocked(position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

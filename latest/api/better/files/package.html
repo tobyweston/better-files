@@ -313,24 +313,6 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
-    </li><li name="better.files.PeekableIterator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="PeekableIterator[A]extendsIterator[A]"></a>
-      <a id="PeekableIterator[A]:PeekableIterator[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="PeekableIterator.html"><span class="name">PeekableIterator</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="better.files.PeekableIterator.A">A</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@PeekableIterator[A]extendsIterator[A]" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">An util to convert an iterator to one that supports peeking
-</p>
     </li><li name="better.files.Implicits.ReaderOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ReaderOpsextendsAnyRef"></a>
       <a id="ReaderOps:ReaderOps"></a>
@@ -366,25 +348,23 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
     </span>
       <p class="shortcomment cmt">Implement this trait to make thing scannable
 </p>
-    </li><li name="better.files.Scanner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ScannerextendsAnyRef"></a>
+    </li><li name="better.files.Scanner" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ScannerextendsIterable[String]withAutoCloseable"></a>
       <a id="Scanner:Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Scanner.html"><span class="name">Scanner</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Scanner.html"><span class="name">Scanner</span></a><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] with <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.package@ScannerextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.package@ScannerextendsIterable[String]withAutoCloseable" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Faster, safer and more idiomatic Scala replacement for java.util.Scanner
-See: http://codeforces.com/blog/entry/7018
-</p>
+      
     </li><li name="better.files.Implicits.StringInterpolations" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="StringInterpolationsextendsAnyRef"></a>
       <a id="StringInterpolations:StringInterpolations"></a>
@@ -547,6 +527,25 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       
+    </li><li name="better.files.Scanner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Scanner"></a>
+      <a id="Scanner:Scanner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Scanner$.html"><span class="name">Scanner</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.package@Scanner" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Faster, safer and more idiomatic Scala replacement for java.util.Scanner
+See: http://codeforces.com/blog/entry/7018
+</p>
     </li><li name="better.files.Implicits#codecToCharSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="codecToCharSet(codec:scala.io.Codec):java.nio.charset.Charset"></a>
       <a id="codecToCharSet(Codec):Charset"></a>

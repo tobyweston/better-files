@@ -2028,18 +2028,18 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
     </span>
       
     </li><li name="better.files.File#newScanner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newScanner(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner"></a>
-      <a id="newScanner(String,Boolean)(Codec):Scanner"></a>
+      <a id="newScanner(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a>
+      <a id="newScanner(Config):Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newScanner</span><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol"><span class="name"><a href="File$.html">File.Delimiters.default</a></span></span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">newScanner</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@newScanner(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@newScanner(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -2423,18 +2423,18 @@ NOTE: This API returns null if this file is the root;
     </span>
       
     </li><li name="better.files.File#scanner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="scanner(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.ManagedResource[better.files.Scanner]"></a>
-      <a id="scanner(String,Boolean)(Codec):ManagedResource[Scanner]"></a>
+      <a id="scanner(implicitconfig:better.files.Scanner.Config):better.files.ManagedResource[better.files.Scanner]"></a>
+      <a id="scanner(Config):ManagedResource[Scanner]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">scanner</span><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol"><span class="name"><a href="File$.html">File.Delimiters.default</a></span></span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a>]</span>
+        <span class="name">scanner</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@scanner(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.ManagedResource[better.files.Scanner]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@scanner(implicitconfig:better.files.Scanner.Config):better.files.ManagedResource[better.files.Scanner]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -2627,18 +2627,18 @@ NOTE: This API returns null if this file is the root;
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.File">File</a> → AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#tokens" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="tokens(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):Traversable[String]"></a>
-      <a id="tokens(String,Boolean)(Codec):Traversable[String]"></a>
+      <a id="tokens(implicitconfig:better.files.Scanner.Config,implicitcodec:scala.io.Codec):Traversable[String]"></a>
+      <a id="tokens(Config,Codec):Traversable[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tokens</span><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol"><span class="name"><a href="File$.html">File.Delimiters.default</a></span></span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">tokens</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@tokens(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):Traversable[String]" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@tokens(implicitconfig:better.files.Scanner.Config,implicitcodec:scala.io.Codec):Traversable[String]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

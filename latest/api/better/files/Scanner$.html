@@ -92,7 +92,28 @@ See: http://codeforces.com/blog/entry/7018
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="better.files.Scanner.Config" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConfigextendsProductwithSerializable"></a>
+      <a id="Config:Config"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Scanner$$Config.html"><span class="name">Config</span></a><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner$@ConfigextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Use this to configure your Scanner
+</p>
+    </li></ol>
+            </div>
 
         
 
@@ -149,104 +170,104 @@ See: http://codeforces.com/blog/entry/7018
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="better.files.Scanner#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.LineNumberReader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner"></a>
-      <a id="apply(LineNumberReader,String,Boolean):Scanner"></a>
+    </li><li name="better.files.Scanner.Config" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Config"></a>
+      <a id="Config:Config"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.LineNumberReader">LineNumberReader</span></span>, <span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <a href="Scanner$$Config$.html"><span class="name">Config</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner$@apply(reader:java.io.LineNumberReader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner$@Config" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="better.files.Scanner#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(file:better.files.File,delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner"></a>
-      <a id="apply(File,String,Boolean)(Codec):Scanner"></a>
+      <a id="apply(reader:java.io.LineNumberReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a>
+      <a id="apply(LineNumberReader)(Config):Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.LineNumberReader">LineNumberReader</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner$@apply(file:better.files.File,delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner$@apply(reader:java.io.LineNumberReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="better.files.Scanner#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(inputStream:java.io.InputStream,delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner"></a>
-      <a id="apply(InputStream,String,Boolean)(Codec):Scanner"></a>
+      <a id="apply(inputStream:java.io.InputStream)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a>
+      <a id="apply(InputStream)(Config):Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner$@apply(inputStream:java.io.InputStream,delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner$@apply(inputStream:java.io.InputStream)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="better.files.Scanner#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.BufferedReader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner"></a>
-      <a id="apply(BufferedReader,String,Boolean):Scanner"></a>
+      <a id="apply(reader:java.io.BufferedReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a>
+      <a id="apply(BufferedReader)(Config):Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>, <span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner$@apply(reader:java.io.BufferedReader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner$@apply(reader:java.io.BufferedReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="better.files.Scanner#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.Reader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner"></a>
-      <a id="apply(Reader,String,Boolean):Scanner"></a>
+      <a id="apply(reader:java.io.Reader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a>
+      <a id="apply(Reader)(Config):Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.Reader">Reader</span></span>, <span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.Reader">Reader</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner$@apply(reader:java.io.Reader,delimiter:String,includeDelimiters:Boolean):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner$@apply(reader:java.io.Reader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="better.files.Scanner#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(str:String,delimiter:String,includeDelimiters:Boolean):better.files.Scanner"></a>
-      <a id="apply(String,String,Boolean):Scanner"></a>
+      <a id="apply(str:String)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a>
+      <a id="apply(String)(Config):Scanner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol"><span class="name"><a href="File$.html">File.Delimiters.default</a></span></span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$$Config$.html">Config.default</a></span></span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.Scanner$@apply(str:String,delimiter:String,includeDelimiters:Boolean):better.files.Scanner" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.Scanner$@apply(str:String)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -291,6 +312,23 @@ See: http://codeforces.com/blog/entry/7018
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="better.files.Scanner#console" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="console:better.files.Scanner"></a>
+      <a id="console:Scanner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">console</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.Scanner$@console:better.files.Scanner" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>

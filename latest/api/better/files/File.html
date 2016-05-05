@@ -335,6 +335,23 @@
       </a>
     </span>
       
+    </li><li name="better.files.File#appendBytes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="appendBytes(bytes:Iterator[Byte])(implicitopenOptions:better.files.File.OpenOptions):better.files.File"></a>
+      <a id="appendBytes(Iterator[Byte])(OpenOptions):File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appendBytes</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@appendBytes(bytes:Iterator[Byte])(implicitopenOptions:better.files.File.OpenOptions):better.files.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#appendLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="appendLine(line:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):better.files.File"></a>
       <a id="appendLine(String)(OpenOptions,Codec):File"></a>
@@ -344,7 +361,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">appendLine</span><span class="params">(<span name="line">line: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">appendLine</span><span class="params">(<span name="line">line: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@appendLine(line:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):better.files.File" title="Permalink" target="_top">
@@ -368,24 +385,8 @@
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="better.files.File#appendNewLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="appendNewLine()(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):better.files.File"></a>
-      <a id="appendNewLine()(OpenOptions,Codec):File"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">appendNewLine</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@appendNewLine()(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):better.files.File" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
+      <p class="shortcomment cmt">For large number of lines that may not fit in memory, use printLines
+</p>
     </li><li name="better.files.File#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply(permission:java.nio.file.attribute.PosixFilePermission)(implicitlinkOptions:better.files.File.LinkOptions):Boolean"></a>
       <a id="apply(PosixFilePermission)(LinkOptions):Boolean"></a>
@@ -653,7 +654,7 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
               
         </dd></dl></div>
     </li><li name="better.files.File#collectChildren" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="collectChildren(f:better.files.File=&gt;Boolean):better.files.Files"></a>
+      <a id="collectChildren(filter:better.files.File=&gt;Boolean):better.files.Files"></a>
       <a id="collectChildren((File)⇒Boolean):Files"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -661,10 +662,10 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">collectChildren</span><span class="params">(<span name="f">f: (<a href="" class="extype" name="better.files.File">File</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
+        <span class="name">collectChildren</span><span class="params">(<span name="filter">filter: (<a href="" class="extype" name="better.files.File">File</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="package.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@collectChildren(f:better.files.File=&gt;Boolean):better.files.Files" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@collectChildren(filter:better.files.File=&gt;Boolean):better.files.Files" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -788,23 +789,24 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
       </a>
     </span>
       
-    </li><li name="better.files.File#createIfNotExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="createIfNotExists(asDirectory:Boolean)(implicitattributes:better.files.File.Attributes,implicitlinkOptions:better.files.File.LinkOptions):better.files.File"></a>
-      <a id="createIfNotExists(Boolean)(Attributes,LinkOptions):File"></a>
+    </li><li name="better.files.File#createIfNotExists" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createIfNotExists(asDirectory:Boolean,createParents:Boolean)(implicitattributes:better.files.File.Attributes,implicitlinkOptions:better.files.File.LinkOptions):better.files.File"></a>
+      <a id="createIfNotExists(Boolean,Boolean)(Attributes,LinkOptions):File"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createIfNotExists</span><span class="params">(<span name="asDirectory">asDirectory: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>, <span name="linkOptions">linkOptions: <a href="File$.html#LinkOptions=Seq[java.nio.file.LinkOption]" class="extmbr" name="better.files.File.LinkOptions">LinkOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.LinkOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">createIfNotExists</span><span class="params">(<span name="asDirectory">asDirectory: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="createParents">createParents: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>, <span name="linkOptions">linkOptions: <a href="File$.html#LinkOptions=Seq[java.nio.file.LinkOption]" class="extmbr" name="better.files.File.LinkOptions">LinkOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.LinkOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@createIfNotExists(asDirectory:Boolean)(implicitattributes:better.files.File.Attributes,implicitlinkOptions:better.files.File.LinkOptions):better.files.File" title="Permalink" target="_top">
+      <a href="../../index.html#better.files.File@createIfNotExists(asDirectory:Boolean,createParents:Boolean)(implicitattributes:better.files.File.Attributes,implicitlinkOptions:better.files.File.LinkOptions):better.files.File" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Create this file.</p><div class="fullcomment"><div class="comment cmt"><p>Create this file. If it exists, don't do anything
+</p></div><dl class="paramcmts block"><dt class="param">asDirectory</dt><dd class="cmt"><p>If you want this file to be created as a directory instead, set this to true (false by default)</p></dd><dt class="param">createParents</dt><dd class="cmt"><p>If you also want all the parents to be created from root to this file (false by defailt)</p></dd></dl></div>
     </li><li name="better.files.File#delete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="delete(swallowIOExceptions:Boolean):better.files.File"></a>
       <a id="delete(Boolean):File"></a>
@@ -2027,6 +2029,23 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
       </a>
     </span>
       
+    </li><li name="better.files.File#newPrintWriter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="newPrintWriter(autoFlush:Boolean)(implicitopenOptions:better.files.File.OpenOptions):java.io.PrintWriter"></a>
+      <a id="newPrintWriter(Boolean)(OpenOptions):PrintWriter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newPrintWriter</span><span class="params">(<span name="autoFlush">autoFlush: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.PrintWriter">PrintWriter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@newPrintWriter(autoFlush:Boolean)(implicitopenOptions:better.files.File.OpenOptions):java.io.PrintWriter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#newRandomAccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="newRandomAccess(mode:better.files.File.RandomAccessMode):java.io.RandomAccessFile"></a>
       <a id="newRandomAccess(RandomAccessMode):RandomAccessFile"></a>
@@ -2333,6 +2352,40 @@ NOTE: This API returns null if this file is the root;
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@posixAttributes(implicitlinkOptions:better.files.File.LinkOptions):java.nio.file.attribute.PosixFileAttributes" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#printLines" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="printLines(lines:Iterator[Any])(implicitopenOptions:better.files.File.OpenOptions):better.files.File"></a>
+      <a id="printLines(Iterator[Any])(OpenOptions):File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">printLines</span><span class="params">(<span name="lines">lines: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@printLines(lines:Iterator[Any])(implicitopenOptions:better.files.File.OpenOptions):better.files.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#printWriter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="printWriter(autoFlush:Boolean)(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.PrintWriter]"></a>
+      <a id="printWriter(Boolean)(OpenOptions):ManagedResource[PrintWriter]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">printWriter</span><span class="params">(<span name="autoFlush">autoFlush: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="package.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.PrintWriter">PrintWriter</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@printWriter(autoFlush:Boolean)(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.io.PrintWriter]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -2918,7 +2971,24 @@ NOTE: This API returns null if this file is the root;
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Write byte array to file.</p><div class="fullcomment"><div class="comment cmt"><p>Write byte array to file. For large files, piping in streams is recommended</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>this</p></dd></dl></div>
+      <p class="shortcomment cmt">Write byte array to file.</p><div class="fullcomment"><div class="comment cmt"><p>Write byte array to file. For large contents consider using the writeBytes</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>this</p></dd></dl></div>
+    </li><li name="better.files.File#writeBytes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="writeBytes(bytes:Iterator[Byte])(implicitopenOptions:better.files.File.OpenOptions):better.files.File"></a>
+      <a id="writeBytes(Iterator[Byte])(OpenOptions):File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeBytes</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@writeBytes(bytes:Iterator[Byte])(implicitopenOptions:better.files.File.OpenOptions):better.files.File" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#zip" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="zip(compressionLevel:Int)(implicitcodec:scala.io.Codec):better.files.File"></a>
       <a id="zip(Int)(Codec):File"></a>

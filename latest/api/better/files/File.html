@@ -942,7 +942,7 @@ If its a file, empty the contents</p></div><dl class="paramcmts block"><dt>retur
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">includeDot</dt><dd class="cmt"><p>whether the dot should be included in the extension or not</p></dd><dt class="param">includeAll</dt><dd class="cmt"><p>whether all extension tokens should be included, or just the last one</p></dd><dt class="param">toLowerCase</dt><dd class="cmt"><p>to lowercase the extension or not e.g. foo.HTML should have .html or .HTML</p></dd><dt>returns</dt><dd class="cmt"><p>extension of this file if it is a regular file and has an extension, else None</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">includeDot</dt><dd class="cmt"><p>whether the dot should be included in the extension or not</p></dd><dt class="param">includeAll</dt><dd class="cmt"><p>whether all extension tokens should be included, or just the last one e.g. for bundle.tar.gz should it be .tar.gz or .gz</p></dd><dt class="param">toLowerCase</dt><dd class="cmt"><p>to lowercase the extension or not e.g. foo.HTML should have .html or .HTML</p></dd><dt>returns</dt><dd class="cmt"><p>extension of this file if it is a regular file and has an extension, else None</p></dd></dl></div>
     </li><li name="better.files.File#extension" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="extension:Option[String]"></a>
       <a id="extension:Option[String]"></a>
@@ -1825,7 +1825,7 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
       </a>
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>destination</p></dd></dl></div>
-    </li><li name="better.files.File#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.File#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="name:String"></a>
       <a id="name:String"></a>
       <h4 class="signature">
@@ -1841,7 +1841,28 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Name of file
+Certain files may not have a name e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Name of file
+Certain files may not have a name e.g. root directory - returns empty string in that case
+</p></div></div>
+    </li><li name="better.files.File#nameOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nameOption:Option[String]"></a>
+      <a id="nameOption:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nameOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@nameOption:Option[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Certain files may not have a name e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Certain files may not have a name e.g. root directory - returns None in that case
+</p></div></div>
     </li><li name="better.files.File#nameWithoutExtension" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nameWithoutExtension:String"></a>
       <a id="nameWithoutExtension:String"></a>
@@ -2234,9 +2255,9 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
     </span>
       <p class="shortcomment cmt">Return parent of this file
 NOTE: This API returns null if this file is the root;
-      please wrap it in an Option if you expect to handle such behaviour</p><div class="fullcomment"><div class="comment cmt"><p>Return parent of this file
+      please use parentOption if you expect to handle roots</p><div class="fullcomment"><div class="comment cmt"><p>Return parent of this file
 NOTE: This API returns null if this file is the root;
-      please wrap it in an Option if you expect to handle such behaviour</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>parentOption</p></span></dd></dl></div>
+      please use parentOption if you expect to handle roots</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>parentOption</p></span></dd></dl></div>
     </li><li name="better.files.File#parentOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parentOption:Option[better.files.File]"></a>
       <a id="parentOption:Option[File]"></a>

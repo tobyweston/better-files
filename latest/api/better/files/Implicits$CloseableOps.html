@@ -203,10 +203,11 @@ Closes the resource when done e.g.</p><div class="fullcomment"><div class="comme
 Closes the resource when done e.g.
 <pre>
 for {
-  in <- file.newInputStream.autoClosed
+in <- file.newInputStream.autoClosed
 } in.write(bytes)
 // in is closed now
-</pre></p></div></div>
+</pre>
+</p></div></div>
     </li><li name="better.files.Implicits.CloseableOps#autoClosedIterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoClosedIterator[B](generator:A=&gt;B)(isValidElement:B=&gt;Boolean):Iterator[B]"></a>
       <a id="autoClosedIterator[B]((A)⇒B)((B)⇒Boolean):Iterator[B]"></a>

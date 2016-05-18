@@ -310,27 +310,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">append</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
+        <span class="name">append</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@append(bytes:Array[Byte])(implicitopenOptions:better.files.File.OpenOptions):File.this.type" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="better.files.File#append" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="append(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type"></a>
-      <a id="append(String)(OpenOptions,Codec):File.this.type"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">append</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@append(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -387,6 +370,23 @@
     </span>
       <p class="shortcomment cmt">For large number of lines that may not fit in memory, use printLines
 </p>
+    </li><li name="better.files.File#appendText" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="appendText(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type"></a>
+      <a id="appendText(String)(OpenOptions,Codec):File.this.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appendText</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.append</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@appendText(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="better.files.File#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply(permission:java.nio.file.attribute.PosixFilePermission)(implicitlinkOptions:better.files.File.LinkOptions):Boolean"></a>
       <a id="apply(PosixFilePermission)(LinkOptions):Boolean"></a>
@@ -2977,23 +2977,6 @@ please use parentOption if you expect to handle roots
       </a>
     </span>
       
-    </li><li name="better.files.File#write" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="write(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type"></a>
-      <a id="write(String)(OpenOptions,Codec):File.this.type"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">write</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#better.files.File@write(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="better.files.File#write" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="write(bytes:Array[Byte])(implicitopenOptions:better.files.File.OpenOptions):File.this.type"></a>
       <a id="write(Array[Byte])(OpenOptions):File.this.type"></a>
@@ -3003,7 +2986,7 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">write</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
+        <span class="name">write</span><span class="params">(<span name="bytes">bytes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@write(bytes:Array[Byte])(implicitopenOptions:better.files.File.OpenOptions):File.this.type" title="Permalink" target="_top">
@@ -3025,6 +3008,23 @@ please use parentOption if you expect to handle roots
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#better.files.File@writeBytes(bytes:Iterator[Byte])(implicitopenOptions:better.files.File.OpenOptions):File.this.type" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="better.files.File#writeText" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="writeText(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type"></a>
+      <a id="writeText(String)(OpenOptions,Codec):File.this.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeText</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>, <span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#better.files.File@writeText(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcodec:scala.io.Codec):File.this.type" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

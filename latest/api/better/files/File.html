@@ -826,9 +826,9 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       
       
     </li><li name="better.files.File#clear" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="clear():File.this.type"></a>
+      <a id="clear()(implicitlinkOptions:better.files.File.LinkOptions):File.this.type"></a><a id="clear()(LinkOptions):File.this.type"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#clear():File.this.type" title="Permalink">
+      <a href="../../better/files/File.html#clear()(implicitlinkOptions:better.files.File.LinkOptions):File.this.type" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -837,7 +837,7 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clear</span><span class="params">()</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
+        <span class="name">clear</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="linkOptions">linkOptions: <a href="File$.html#LinkOptions=Seq[java.nio.file.LinkOption]" class="extmbr" name="better.files.File.LinkOptions">LinkOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.LinkOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
       </span>
       
       <p class="shortcomment cmt">If this is a directory, remove all its children
@@ -1397,9 +1397,9 @@ See: https://github.com/pathikrit/better-files/issues/89
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this file (or the file found by following symlink) is a directory</p></dd></dl></div>
     </li><li name="better.files.File#isEmpty" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isEmpty:Boolean"></a>
+      <a id="isEmpty(implicitlinkOptions:better.files.File.LinkOptions):Boolean"></a><a id="isEmpty(LinkOptions):Boolean"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#isEmpty:Boolean" title="Permalink">
+      <a href="../../better/files/File.html#isEmpty(implicitlinkOptions:better.files.File.LinkOptions):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1408,7 +1408,7 @@ See: https://github.com/pathikrit/better-files/issues/89
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isEmpty</span><span class="params">(<span class="implicit">implicit </span><span name="linkOptions">linkOptions: <a href="File$.html#LinkOptions=Seq[java.nio.file.LinkOption]" class="extmbr" name="better.files.File.LinkOptions">LinkOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.LinkOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if file is not present or empty directory or 0-bytes file</p></dd></dl></div>
@@ -1521,6 +1521,22 @@ See: https://github.com/pathikrit/better-files/issues/89
       </span>
       <span class="symbol">
         <span class="name">isLocked</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a></span>, <span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      
+    </li><li name="better.files.File#isNotEmpty" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isNotEmpty(implicitlinkOptions:better.files.File.LinkOptions):Boolean"></a><a id="isNotEmpty(LinkOptions):Boolean"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#isNotEmpty(implicitlinkOptions:better.files.File.LinkOptions):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNotEmpty</span><span class="params">(<span class="implicit">implicit </span><span name="linkOptions">linkOptions: <a href="File$.html#LinkOptions=Seq[java.nio.file.LinkOption]" class="extmbr" name="better.files.File.LinkOptions">LinkOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.LinkOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       

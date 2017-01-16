@@ -867,7 +867,7 @@ If its a file, empty the contents
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="better.files.File#collectChildren" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.File#collectChildren" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="collectChildren(matchFilter:better.files.File=&gt;Boolean)(implicitvisitOptions:better.files.File.VisitOptions):better.files.Files"></a><a id="collectChildren((File)⇒Boolean)(VisitOptions):Files"></a>
       <span class="permalink">
       <a href="../../better/files/File.html#collectChildren(matchFilter:better.files.File=&gt;Boolean)(implicitvisitOptions:better.files.File.VisitOptions):better.files.Files" title="Permalink">
@@ -883,7 +883,9 @@ If its a file, empty the contents
       </span>
       
       <p class="shortcomment cmt">More Scala friendly way of doing Files.walk
-</p>
+Note: This is lazy (returns an Iterator) and won't evaluate till we reify the iterator (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>More Scala friendly way of doing Files.walk
+Note: This is lazy (returns an Iterator) and won't evaluate till we reify the iterator (e.g. using .toList)
+</p></div></div>
     </li><li name="better.files.File#contains" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="contains(file:better.files.File):Boolean"></a><a id="contains(File):Boolean"></a>
       <span class="permalink">

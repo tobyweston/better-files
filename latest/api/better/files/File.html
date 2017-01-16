@@ -2926,9 +2926,9 @@ please use parentOption if you expect to handle roots
       <p class="shortcomment cmt">Similar to the UNIX command touch - create this file if it does not exist and set its last modification time
 </p>
     </li><li name="better.files.File#unzip" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="unzip()(implicitcodec:scala.io.Codec):better.files.File"></a><a id="unzip()(Codec):File"></a>
+      <a id="unzip(zipFilter:java.util.zip.ZipEntry=&gt;Boolean)(implicitcodec:scala.io.Codec):better.files.File"></a><a id="unzip((ZipEntry)⇒Boolean)(Codec):File"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#unzip()(implicitcodec:scala.io.Codec):better.files.File" title="Permalink">
+      <a href="../../better/files/File.html#unzip(zipFilter:java.util.zip.ZipEntry=&gt;Boolean)(implicitcodec:scala.io.Codec):better.files.File" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -2937,16 +2937,16 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unzip</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+        <span class="name">unzip</span><span class="params">(<span name="zipFilter">zipFilter: (<span class="extype" name="java.util.zip.ZipEntry">ZipEntry</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_ =&gt; true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
       </span>
       
       <p class="shortcomment cmt">unzip to a temporary zip file
 </p><div class="fullcomment"><div class="comment cmt"><p>unzip to a temporary zip file
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the zip file</p></dd></dl></div>
     </li><li name="better.files.File#unzipTo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="unzipTo(destination:better.files.File)(implicitcodec:scala.io.Codec):destination.type"></a><a id="unzipTo(File)(Codec):destination.type"></a>
+      <a id="unzipTo(destination:better.files.File,zipFilter:java.util.zip.ZipEntry=&gt;Boolean)(implicitcodec:scala.io.Codec):destination.type"></a><a id="unzipTo(File,(ZipEntry)⇒Boolean)(Codec):destination.type"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#unzipTo(destination:better.files.File)(implicitcodec:scala.io.Codec):destination.type" title="Permalink">
+      <a href="../../better/files/File.html#unzipTo(destination:better.files.File,zipFilter:java.util.zip.ZipEntry=&gt;Boolean)(implicitcodec:scala.io.Codec):destination.type" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -2955,12 +2955,12 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unzipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="better.files.File.unzipTo.destination">destination</span>.type</span>
+        <span class="name">unzipTo</span><span class="params">(<span name="destination">destination: <a href="" class="extype" name="better.files.File">File</a></span>, <span name="zipFilter">zipFilter: (<span class="extype" name="java.util.zip.ZipEntry">ZipEntry</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_ =&gt; true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result">: <span class="extype" name="better.files.File.unzipTo.destination">destination</span>.type</span>
       </span>
       
       <p class="shortcomment cmt">Unzips this zip file
 </p><div class="fullcomment"><div class="comment cmt"><p>Unzips this zip file
-</p></div><dl class="paramcmts block"><dt class="param">destination</dt><dd class="cmt"><p>destination folder; Creates this if it does not exist</p></dd><dt>returns</dt><dd class="cmt"><p>The destination where contents are unzipped</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">destination</dt><dd class="cmt"><p>destination folder; Creates this if it does not exist</p></dd><dt class="param">zipFilter</dt><dd class="cmt"><p>An optional param to reject or accept unzipping a file</p></dd><dt>returns</dt><dd class="cmt"><p>The destination where contents are unzipped</p></dd></dl></div>
     </li><li name="better.files.File#update" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="update(attribute:String,value:Any)(implicitlinkOptions:better.files.File.LinkOptions):File.this.type"></a><a id="update(String,Any)(LinkOptions):File.this.type"></a>
       <span class="permalink">

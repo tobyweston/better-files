@@ -170,7 +170,7 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Config</span><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Config</span><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
@@ -227,9 +227,9 @@ See: http://codeforces.com/blog/entry/7018
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="better.files.Scanner.Config#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner.Config"></a><a id="&lt;init&gt;:Config"></a>
+      <a id="&lt;init&gt;(delimiter:String,includeDelimiters:Boolean)(implicitcharset:java.nio.charset.Charset):better.files.Scanner.Config"></a><a id="&lt;init&gt;:Config"></a>
       <span class="permalink">
-      <a href="../../better/files/Scanner$$Config.html#&lt;init&gt;(delimiter:String,includeDelimiters:Boolean)(implicitcodec:scala.io.Codec):better.files.Scanner.Config" title="Permalink">
+      <a href="../../better/files/Scanner$$Config.html#&lt;init&gt;(delimiter:String,includeDelimiters:Boolean)(implicitcharset:java.nio.charset.Charset):better.files.Scanner.Config" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -238,7 +238,7 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Config</span><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="codec">codec: <span class="extype" name="scala.io.Codec">Codec</span></span>)</span>
+        <span class="name">Config</span><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span>
       </span>
       
       
@@ -316,6 +316,22 @@ See: http://codeforces.com/blog/entry/7018
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="better.files.Scanner.Config#charset" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="charset:java.nio.charset.Charset"></a><a id="charset:Charset"></a>
+      <span class="permalink">
+      <a href="../../better/files/Scanner$$Config.html#charset:java.nio.charset.Charset" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">charset</span><span class="result">: <span class="extype" name="java.nio.charset.Charset">Charset</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -338,22 +354,6 @@ See: http://codeforces.com/blog/entry/7018
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="better.files.Scanner.Config#codec" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="codec:scala.io.Codec"></a><a id="codec:Codec"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$$Config.html#codec:scala.io.Codec" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">codec</span><span class="result">: <span class="extype" name="scala.io.Codec">Codec</span></span>
-      </span>
-      
-      
     </li><li name="better.files.Scanner.Config#delimiter" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="delimiter:String"></a>
       <span class="permalink">

@@ -121,6 +121,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Implicits$DigestInputStreamsOps.html" title=""></a>
+                        <a href="Implicits$DigestInputStreamsOps.html" title="">
+                          DigestInputStreamsOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="object" href="Dsl$.html" title="Do file ops using a UNIX command line DSL
 "></a>
                         <a href="Dsl$.html" title="Do file ops using a UNIX command line DSL
@@ -698,9 +704,9 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
       
       
     </li><li name="better.files.File#checksum" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="checksum(algorithm:String):String"></a><a id="checksum(String):String"></a>
+      <a id="checksum(algorithm:java.security.MessageDigest):String"></a><a id="checksum(MessageDigest):String"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#checksum(algorithm:String):String" title="Permalink">
+      <a href="../../better/files/File.html#checksum(algorithm:java.security.MessageDigest):String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -709,7 +715,7 @@ Example usage file&quot;foo.java&quot;.changeExtensionTo(&quot;.scala&quot;)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">checksum</span><span class="params">(<span name="algorithm">algorithm: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">checksum</span><span class="params">(<span name="algorithm">algorithm: <span class="extype" name="java.security.MessageDigest">MessageDigest</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>checksum of this file (or directory) in hex format</p></dd></dl></div>
@@ -956,9 +962,9 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
       
       
     </li><li name="better.files.File#digest" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="digest(algorithmName:String):Array[Byte]"></a><a id="digest(String):Array[Byte]"></a>
+      <a id="digest(algorithm:java.security.MessageDigest):Array[Byte]"></a><a id="digest(MessageDigest):Array[Byte]"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#digest(algorithmName:String):Array[Byte]" title="Permalink">
+      <a href="../../better/files/File.html#digest(algorithm:java.security.MessageDigest):Array[Byte]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -967,7 +973,23 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">digest</span><span class="params">(<span name="algorithmName">algorithmName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+        <span class="name">digest</span><span class="params">(<span name="algorithm">algorithm: <span class="extype" name="java.security.MessageDigest">MessageDigest</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      
+      
+    </li><li name="better.files.File#digestInputStream" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="digestInputStream(digest:java.security.MessageDigest)(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.security.DigestInputStream]"></a><a id="digestInputStream(MessageDigest)(OpenOptions):ManagedResource[DigestInputStream]"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#digestInputStream(digest:java.security.MessageDigest)(implicitopenOptions:better.files.File.OpenOptions):better.files.ManagedResource[java.security.DigestInputStream]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">digestInputStream</span><span class="params">(<span name="digest">digest: <span class="extype" name="java.security.MessageDigest">MessageDigest</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.security.DigestInputStream">DigestInputStream</span>]</span>
       </span>
       
       
@@ -2019,6 +2041,22 @@ Certain files may not have a name e.g. root directory - returns empty string in 
       </span>
       <span class="symbol">
         <span class="name">newBufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>, <span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedWriter">BufferedWriter</span></span>
+      </span>
+      
+      
+    </li><li name="better.files.File#newDigestInputStream" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="newDigestInputStream(digest:java.security.MessageDigest)(implicitopenOptions:better.files.File.OpenOptions):java.security.DigestInputStream"></a><a id="newDigestInputStream(MessageDigest)(OpenOptions):DigestInputStream"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#newDigestInputStream(digest:java.security.MessageDigest)(implicitopenOptions:better.files.File.OpenOptions):java.security.DigestInputStream" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newDigestInputStream</span><span class="params">(<span name="digest">digest: <span class="extype" name="java.security.MessageDigest">MessageDigest</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.security.DigestInputStream">DigestInputStream</span></span>
       </span>
       
       

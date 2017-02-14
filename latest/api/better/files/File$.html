@@ -109,6 +109,12 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="better">better</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="BomEncoder.html" title="Encoder that writes the BOM for this charset"></a>
+                        <a href="BomEncoder.html" title="Encoder that writes the BOM for this charset">
+                          BomEncoder
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Implicits$BufferedReaderOps.html" title=""></a>
                         <a href="Implicits$BufferedReaderOps.html" title="">
                           BufferedReaderOps
@@ -230,6 +236,22 @@ See: http://codeforces.com/blog/entry/7018
                         <a href="ThreadBackedFileMonitor.html" title="A thread based implementation of the FileMonitor
 ">
                           ThreadBackedFileMonitor
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <a class="object" href="UnicodeCharset$.html" title=""></a>
+                        <a class="class" href="UnicodeCharset.html" title="A Unicode charset that handles byte-order markers
+"></a>
+                        <a href="UnicodeCharset.html" title="A Unicode charset that handles byte-order markers
+">
+                          UnicodeCharset
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="UnicodeDecoder.html" title="A Unicode decoder that uses the Unicode byte-order marker (BOM) to auto-detect the encoding
+(if none detected, falls back on the defaultCharset)."></a>
+                        <a href="UnicodeDecoder.html" title="A Unicode decoder that uses the Unicode byte-order marker (BOM) to auto-detect the encoding
+(if none detected, falls back on the defaultCharset).">
+                          UnicodeDecoder
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
@@ -649,22 +671,6 @@ e.g. it's last component is removed when it is used as an anchor.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="better.files.File#charset" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="charset(name:String):java.nio.charset.Charset"></a><a id="charset(String):Charset"></a>
-      <span class="permalink">
-      <a href="../../better/files/File$.html#charset(name:String):java.nio.charset.Charset" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">charset</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.nio.charset.Charset">Charset</span></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -718,7 +724,10 @@ e.g. it's last component is removed when it is used as an anchor.
         <span class="name">defaultCharset</span><span class="result">: <span class="extype" name="java.nio.charset.Charset">Charset</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt">The default charset used by better-files
+Note: It uses java.net.charset.Charset.defaultCharset() in general but if the default supports byte-order markers,
+      it uses a more compliant version than the JDK one (see: https://github.com/pathikrit/better-files/issues/107)
+</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -930,6 +939,22 @@ e.g. it's last component is removed when it is used as an anchor.
       </span>
       <span class="symbol">
         <span class="name">numberOfOpenFileDescriptors</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      
+      
+    </li><li name="better.files.File#resource" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resource(name:String):better.files.File"></a><a id="resource(String):File"></a>
+      <span class="permalink">
+      <a href="../../better/files/File$.html#resource(name:String):better.files.File" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resource</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="File.html" class="extype" name="better.files.File">File</a></span>
       </span>
       
       

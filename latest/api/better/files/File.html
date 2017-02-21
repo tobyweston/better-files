@@ -1246,9 +1246,9 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.File#glob" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="glob(pattern:String)(implicitsyntax:better.files.File.PathMatcherSyntax,implicitvisitOptions:better.files.File.VisitOptions):better.files.Files"></a><a id="glob(String)(PathMatcherSyntax,VisitOptions):Files"></a>
+      <a id="glob(pattern:String,includePath:Boolean)(implicitsyntax:better.files.File.PathMatcherSyntax,implicitvisitOptions:better.files.File.VisitOptions):better.files.Files"></a><a id="glob(String,Boolean)(PathMatcherSyntax,VisitOptions):Files"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#glob(pattern:String)(implicitsyntax:better.files.File.PathMatcherSyntax,implicitvisitOptions:better.files.File.VisitOptions):better.files.Files" title="Permalink">
+      <a href="../../better/files/File.html#glob(pattern:String,includePath:Boolean)(implicitsyntax:better.files.File.PathMatcherSyntax,implicitvisitOptions:better.files.File.VisitOptions):better.files.Files" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1257,12 +1257,11 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">glob</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="syntax">syntax: <a href="File$$PathMatcherSyntax.html" class="extype" name="better.files.File.PathMatcherSyntax">PathMatcherSyntax</a> = <span class="symbol"><span class="name"><a href="File$.html">File.PathMatcherSyntax.default</a></span></span></span>, <span name="visitOptions">visitOptions: <a href="File$.html#VisitOptions=Seq[java.nio.file.FileVisitOption]" class="extmbr" name="better.files.File.VisitOptions">VisitOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.VisitOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
+        <span class="name">glob</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includePath">includePath: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="syntax">syntax: <a href="File$$PathMatcherSyntax.html" class="extype" name="better.files.File.PathMatcherSyntax">PathMatcherSyntax</a> = <span class="symbol"><span class="name"><a href="File$.html">File.PathMatcherSyntax.default</a></span></span></span>, <span name="visitOptions">visitOptions: <a href="File$.html#VisitOptions=Seq[java.nio.file.FileVisitOption]" class="extmbr" name="better.files.File.VisitOptions">VisitOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.VisitOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
       </span>
       
-      <p class="shortcomment cmt">Util to glob from this file's path
-</p><div class="fullcomment"><div class="comment cmt"><p>Util to glob from this file's path
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Set of files that matched</p></dd></dl></div>
+      <p class="shortcomment cmt">Util to glob from this file's path</p><div class="fullcomment"><div class="comment cmt"><p>Util to glob from this file's path</p></div><dl class="paramcmts block"><dt class="param">includePath</dt><dd class="cmt"><p>If true, we don't need to set path glob patterns
+                   e.g. instead of *</p></dd></dl></div>
     </li><li name="better.files.File#group" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="group(implicitlinkOptions:better.files.File.LinkOptions):java.nio.file.attribute.GroupPrincipal"></a><a id="group(LinkOptions):GroupPrincipal"></a>
       <span class="permalink">
@@ -2459,9 +2458,9 @@ please use parentOption if you expect to handle roots
       
       
     </li><li name="better.files.File#pathMatcher" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pathMatcher(syntax:better.files.File.PathMatcherSyntax)(pattern:String):java.nio.file.PathMatcher"></a><a id="pathMatcher(PathMatcherSyntax)(String):PathMatcher"></a>
+      <a id="pathMatcher(syntax:better.files.File.PathMatcherSyntax,includePath:Boolean)(pattern:String):java.nio.file.PathMatcher"></a><a id="pathMatcher(PathMatcherSyntax,Boolean)(String):PathMatcher"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#pathMatcher(syntax:better.files.File.PathMatcherSyntax)(pattern:String):java.nio.file.PathMatcher" title="Permalink">
+      <a href="../../better/files/File.html#pathMatcher(syntax:better.files.File.PathMatcherSyntax,includePath:Boolean)(pattern:String):java.nio.file.PathMatcher" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -2470,7 +2469,7 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pathMatcher</span><span class="params">(<span name="syntax">syntax: <a href="File$$PathMatcherSyntax.html" class="extype" name="better.files.File.PathMatcherSyntax">PathMatcherSyntax</a></span>)</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.nio.file.PathMatcher">PathMatcher</span></span>
+        <span class="name">pathMatcher</span><span class="params">(<span name="syntax">syntax: <a href="File$$PathMatcherSyntax.html" class="extype" name="better.files.File.PathMatcherSyntax">PathMatcherSyntax</a></span>, <span name="includePath">includePath: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.nio.file.PathMatcher">PathMatcher</span></span>
       </span>
       
       

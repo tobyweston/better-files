@@ -208,7 +208,7 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
+        <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
@@ -222,12 +222,7 @@
             Linear Supertypes
           </span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">
-              Known Subclasses
-            </span>
-            <div class="subClasses hiddenContent"><a href="File$$PathMatcherSyntax$$Glob$.html" class="extype" name="better.files.File.PathMatcherSyntax.Glob">Glob</a>, <a href="File$$PathMatcherSyntax$$PathGlob$.html" class="extype" name="better.files.File.PathMatcherSyntax.PathGlob">PathGlob</a>, <a href="File$$PathMatcherSyntax$$PathRegex$.html" class="extype" name="better.files.File.PathMatcherSyntax.PathRegex">PathRegex</a>, <a href="File$$PathMatcherSyntax$$Regex$.html" class="extype" name="better.files.File.PathMatcherSyntax.Regex">Regex</a></div>
-          </div></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -274,10 +269,29 @@
 
         
 
-        
+        <div class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="better.files.File.PathMatcherSyntax#escapePath" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="escapePath(path:String):String"></a><a id="escapePath(String):String"></a>
+      <span class="permalink">
+      <a href="../../better/files/File$$PathMatcherSyntax.html#escapePath(path:String):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">escapePath</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
 
         <div class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
@@ -327,10 +341,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="better.files.File.PathMatcherSyntax#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(pattern:String,file:better.files.File):java.nio.file.PathMatcher"></a><a id="apply(String,File):PathMatcher"></a>
+    </li><li name="better.files.File.PathMatcherSyntax#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(file:better.files.File,pattern:String,includePath:Boolean):java.nio.file.PathMatcher"></a><a id="apply(File,String,Boolean):PathMatcher"></a>
       <span class="permalink">
-      <a href="../../better/files/File$$PathMatcherSyntax.html#apply(pattern:String,file:better.files.File):java.nio.file.PathMatcher" title="Permalink">
+      <a href="../../better/files/File$$PathMatcherSyntax.html#apply(file:better.files.File,pattern:String,includePath:Boolean):java.nio.file.PathMatcher" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -339,10 +353,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>)</span><span class="result">: <span class="extype" name="java.nio.file.PathMatcher">PathMatcher</span></span>
+        <span class="name">apply</span><span class="params">(<span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includePath">includePath: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="java.nio.file.PathMatcher">PathMatcher</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Return PathMatcher from this file
+</p><div class="fullcomment"><div class="comment cmt"><p>Return PathMatcher from this file
+</p></div><dl class="paramcmts block"><dt class="param">includePath</dt><dd class="cmt"><p>If this is true, no need to include path matchers
+                   e.g. instead of &quot;*</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">

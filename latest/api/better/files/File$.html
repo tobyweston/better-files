@@ -709,6 +709,24 @@ e.g. it's last component is removed when it is used as an anchor.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="better.files.File#copyResource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyResource(name:String)(out:better.files.File):out.type"></a><a id="copyResource(String)(File):out.type"></a>
+      <span class="permalink">
+      <a href="../../better/files/File$.html#copyResource(name:String)(out:better.files.File):out.type" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copyResource</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="out">out: <a href="File.html" class="extype" name="better.files.File">File</a> = <span class="defval" name='<span class="name"><a href="">File.newTemporaryFile(prefix = name)</a></span>'>...</span></span>)</span><span class="result">: <span class="extype" name="better.files.File.copyResource.out">out</span>.type</span>
+      </span>
+      
+      <p class="shortcomment cmt">Copies a resource into a file
+</p><div class="fullcomment"><div class="comment cmt"><p>Copies a resource into a file
+</p></div><dl class="paramcmts block"><dt class="param">out</dt><dd class="cmt"><p>File where resource is copied into, if not specified a temp file is created</p></dd></dl></div>
     </li><li name="better.files.File#currentWorkingDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="currentWorkingDirectory:better.files.File"></a><a id="currentWorkingDirectory:File"></a>
       <span class="permalink">
@@ -973,23 +991,9 @@ Note: It uses java.net.charset.Charset.defaultCharset() in general but if the de
         <span class="name">resource</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="File.html" class="extype" name="better.files.File">File</a></span>
       </span>
       
-      
-    </li><li name="better.files.File#resourceAsTempFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resourceAsTempFile(name:String):better.files.File"></a><a id="resourceAsTempFile(String):File"></a>
-      <span class="permalink">
-      <a href="../../better/files/File$.html#resourceAsTempFile(name:String):better.files.File" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">resourceAsTempFile</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="File.html" class="extype" name="better.files.File">File</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Copies a resource into a tempFile
+      <p class="shortcomment cmt">Get a file from a resource
+Note: Use resourceToFile instead as this may not actually always load the file
+See: http://stackoverflow.com/questions/676250/different-ways-of-loading-a-file-as-an-inputstream
 </p>
     </li><li name="better.files.File#root" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="root:better.files.File"></a><a id="root:File"></a>

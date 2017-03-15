@@ -193,6 +193,18 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Implicits$ObjectInputStreamOps.html" title=""></a>
+                        <a href="Implicits$ObjectInputStreamOps.html" title="">
+                          ObjectInputStreamOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Implicits$ObjectOutputStreamOps.html" title=""></a>
+                        <a href="Implicits$ObjectOutputStreamOps.html" title="">
+                          ObjectOutputStreamOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Implicits$OutputStreamOps.html" title=""></a>
                         <a href="Implicits$OutputStreamOps.html" title="">
                           OutputStreamOps
@@ -2537,6 +2549,23 @@ please use parentOption if you expect to handle roots
       </span>
       
       
+    </li><li name="better.files.File#readDeserialized" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readDeserialized[A](implicitopenOptions:better.files.File.OpenOptions):A"></a><a id="readDeserialized[A](OpenOptions):A"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#readDeserialized[A](implicitopenOptions:better.files.File.OpenOptions):A" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readDeserialized</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <span class="extype" name="better.files.File.readDeserialized.A">A</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Deserialize a object using Java's default serialization from this file
+</p>
     </li><li name="better.files.File#register" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="register(service:java.nio.file.WatchService,events:better.files.File.Events):File.this.type"></a><a id="register(WatchService,Events):File.this.type"></a>
       <span class="permalink">
@@ -3157,6 +3186,23 @@ please use parentOption if you expect to handle roots
       </span>
       
       
+    </li><li name="better.files.File#writeSerialized" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="writeSerialized(obj:java.io.Serializable)(implicitopenOptions:better.files.File.OpenOptions):File.this.type"></a><a id="writeSerialized(Serializable)(OpenOptions):File.this.type"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#writeSerialized(obj:java.io.Serializable)(implicitopenOptions:better.files.File.OpenOptions):File.this.type" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeSerialized</span><span class="params">(<span name="obj">obj: <span class="extype" name="java.io.Serializable">Serializable</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
+      </span>
+      
+      <p class="shortcomment cmt">Serialize a object using Java's serializer into this file
+</p>
     </li><li name="better.files.File#writeText" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="writeText(text:String)(implicitopenOptions:better.files.File.OpenOptions,implicitcharset:java.nio.charset.Charset):File.this.type"></a><a id="writeText(String)(OpenOptions,Charset):File.this.type"></a>
       <span class="permalink">

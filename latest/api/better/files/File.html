@@ -149,6 +149,14 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="FileMonitor.html" title="Implementation of File.Monitor
+"></a>
+                        <a href="FileMonitor.html" title="Implementation of File.Monitor
+">
+                          FileMonitor
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Implicits$FileOps.html" title=""></a>
                         <a href="Implicits$FileOps.html" title="">
                           FileOps
@@ -256,14 +264,6 @@ If error happens on any one while doing an operation, only the last error is rep
                         <a href="TeeOutputStream.html" title="Write to multiple outputstreams at once
 If error happens on any one while doing an operation, only the last error is reported">
                           TeeOutputStream
-                        </a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="class" href="ThreadBackedFileMonitor.html" title="A thread based implementation of the FileMonitor
-"></a>
-                        <a href="ThreadBackedFileMonitor.html" title="A thread based implementation of the FileMonitor
-">
-                          ThreadBackedFileMonitor
                         </a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="UnicodeCharset$.html" title=""></a>
@@ -1981,6 +1981,25 @@ Certain files may not have a name e.g. root directory - returns empty string in 
       
       <p class="shortcomment cmt">Certain files may not have a name e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Certain files may not have a name e.g. root directory - returns None in that case
 </p></div></div>
+    </li><li name="better.files.File#nameWithoutExtension" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nameWithoutExtension(includeAll:Boolean):String"></a><a id="nameWithoutExtension(Boolean):String"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#nameWithoutExtension(includeAll:Boolean):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nameWithoutExtension</span><span class="params">(<span name="includeAll">includeAll: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">includeAll</dt><dd class="cmt"><p>
+        For files with multiple extensions e.g. &quot;bundle.tar.gz&quot;
+        nameWithoutExtension(includeAll = true) returns &quot;bundle&quot;
+        nameWithoutExtension(includeAll = false) returns &quot;bundle.tar&quot;</p></dd></dl></div>
     </li><li name="better.files.File#nameWithoutExtension" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nameWithoutExtension:String"></a>
       <span class="permalink">

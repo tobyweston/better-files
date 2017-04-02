@@ -210,7 +210,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Monitor</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">Monitor</span><span class="result"> extends <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
       </span>
       </h4>
 
@@ -220,12 +220,12 @@
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">
               Known Subclasses
             </span>
-            <div class="subClasses hiddenContent"><a href="ThreadBackedFileMonitor.html" class="extype" name="better.files.ThreadBackedFileMonitor">ThreadBackedFileMonitor</a></div>
+            <div class="subClasses hiddenContent"><a href="FileMonitor.html" class="extype" name="better.files.FileMonitor">FileMonitor</a></div>
           </div></div>
         
 
@@ -251,7 +251,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="better.files.File.Monitor"><span>Monitor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="better.files.File.Monitor"><span>Monitor</span></li><li class="in" name="java.lang.AutoCloseable"><span>AutoCloseable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -275,7 +275,29 @@
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="better.files.File.Monitor#onCreate" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="java.lang.AutoCloseable#close" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="close():Unit"></a>
+      <span class="permalink">
+      <a href="../../better/files/File$$Monitor.html#close():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">close</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AutoCloseable</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="better.files.File.Monitor#onCreate" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="onCreate(file:better.files.File):Unit"></a><a id="onCreate(File):Unit"></a>
       <span class="permalink">
       <a href="../../better/files/File$$Monitor.html#onCreate(file:better.files.File):Unit" title="Permalink">
@@ -372,9 +394,9 @@
       
       
     </li><li name="better.files.File.Monitor#start" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="start():Unit"></a>
+      <a id="start()(implicitexecutionContext:scala.concurrent.ExecutionContext):Unit"></a><a id="start()(ExecutionContext):Unit"></a>
       <span class="permalink">
-      <a href="../../better/files/File$$Monitor.html#start():Unit" title="Permalink">
+      <a href="../../better/files/File$$Monitor.html#start()(implicitexecutionContext:scala.concurrent.ExecutionContext):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -383,23 +405,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">start</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      
-    </li><li name="better.files.File.Monitor#stop" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="stop():Unit"></a>
-      <span class="permalink">
-      <a href="../../better/files/File$$Monitor.html#stop():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">stop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">start</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="executionContext">executionContext: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       
@@ -663,6 +669,22 @@
       <p class="shortcomment cmt">Dispatch a StandardWatchEventKind to an appropriate callback
 Override this if you don't want to manually handle onDelete/onCreate/onModify separately
 </p>
+    </li><li name="better.files.File.Monitor#stop" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="stop():Unit"></a>
+      <span class="permalink">
+      <a href="../../better/files/File$$Monitor.html#stop():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -771,7 +793,9 @@ Override this if you don't want to manually handle onDelete/onCreate/onModify se
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="java.lang.AutoCloseable">
+              <h3>Inherited from <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

@@ -184,7 +184,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">NewEvent</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>)</span><span class="result"> extends <a href="FileWatcher$$Message.html" class="extype" name="better.files.FileWatcher.Message">Message</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">NewEvent</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="FileWatcher$$Message.html" class="extype" name="better.files.FileWatcher.Message">Message</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
@@ -240,9 +240,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="better.files.FileWatcher.Message.NewEvent#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(event:better.files.FileWatcher.Event,file:better.files.File):better.files.FileWatcher.Message.NewEvent"></a><a id="&lt;init&gt;:NewEvent"></a>
+      <a id="&lt;init&gt;(event:better.files.FileWatcher.Event,file:better.files.File,count:Int):better.files.FileWatcher.Message.NewEvent"></a><a id="&lt;init&gt;:NewEvent"></a>
       <span class="permalink">
-      <a href="../../better/files/FileWatcher$$Message$$NewEvent.html#&lt;init&gt;(event:better.files.FileWatcher.Event,file:better.files.File):better.files.FileWatcher.Message.NewEvent" title="Permalink">
+      <a href="../../better/files/FileWatcher$$Message$$NewEvent.html#&lt;init&gt;(event:better.files.FileWatcher.Event,file:better.files.File,count:Int):better.files.FileWatcher.Message.NewEvent" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -251,7 +251,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">NewEvent</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>)</span>
+        <span class="name">NewEvent</span><span class="params">(<span name="event">event: <a href="FileWatcher$.html#Event=java.nio.file.WatchEvent.Kind[java.nio.file.Path]" class="extmbr" name="better.files.FileWatcher.Event">Event</a></span>, <span name="file">file: <a href="File.html" class="extype" name="better.files.File">File</a></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span>
       </span>
       
       
@@ -351,6 +351,22 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="better.files.FileWatcher.Message.NewEvent#count" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="count:Int"></a>
+      <span class="permalink">
+      <a href="../../better/files/FileWatcher$$Message$$NewEvent.html#count:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">count</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">

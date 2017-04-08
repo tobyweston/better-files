@@ -16,12 +16,12 @@ class FileWatcher(file: File, maxDepth: Int) extends Actor {
 
   protected[this] val callbacks = newMultiMap[Event, Callback]
 
-  protected[this] val monitor: File.Monitor = new FileMonitor(file, maxDepth) {
+  protected[this] val monitor: File.Monitor = new FileMonitor(file, maxDepth)(executor = context.dispatcher) {
     override def onEvent(event: Event, file: File, count: Int) = self ! Message.NewEvent(event, file, count)
     override def onException(exception: Throwable) = self ! Status.Failure(exception)
   }
 
-  override def preStart() = monitor.start()(executionContext = context.dispatcher)
+  override def preStart() = monitor.start()
 
   override def receive = {
     case Message.NewEvent(event, target, count) if callbacks.contains(event) => callbacks(event).foreach(f => f(event -> target))

@@ -5,22 +5,19 @@ import java.nio.file._
 import scala.concurrent.ExecutionContext
 import scala.util.control.NonFatal
 
-/**
-  * Implementation of File.Monitor
-  *
-  * @param root
-  * @param maxDepth
-  */
-abstract class FileMonitor(val root: File, maxDepth: Int) extends File.Monitor {
+abstract class FileMonitor(val root: File, maxDepth: Int)(implicit executor: ExecutionContext) extends File.Monitor {
   protected[this] val service = root.newWatchService
 
-  def this(root: File, recursive: Boolean = true) = this(root, if (recursive) Int.MaxValue else 0)
+  private val thread = new Thread(() => {
+    Iterator.continually(service.take()).foreach(process)
+  })
+  thread.setName("better-files-watcher-thread")
+  thread.setDaemon(true)
+  thread.setUncaughtExceptionHandler((_, exception) => onException(exception))
 
-  /**
-    * If watching non-directory, don't react to siblings
-    * @param target
-    * @return
-    */
+  def this(root: File, recursive: Boolean = true)(implicit executor: ExecutionContext) = this(root, if (recursive) Int.MaxValue else 0)
+
+  /** If watching non-directory, don't react to siblings */
   protected[this] def reactTo(target: File) = root.isDirectory || root.isSamePathAs(target)
 
   protected[this] def process(key: WatchKey) = {
@@ -35,9 +32,9 @@ abstract class FileMonitor(val root: File, maxDepth: Int) extends File.Monitor {
             val depth = root.relativize(target).getNameCount
             watch(target, (maxDepth - depth) max 0) // auto-watch new files in a directory
           }
-          onEvent(event.kind(), target, event.count())
+          executor.execute(() => onEvent(event.kind(), target, event.count()))
         }
-      case event => if (reactTo(path)) onUnknownEvent(event, event.count())
+      case event => if (reactTo(path)) executor.execute(() => onUnknownEvent(event, event.count()))
     }
     key.reset()
   }
@@ -57,12 +54,15 @@ abstract class FileMonitor(val root: File, maxDepth: Int) extends File.Monitor {
     }
   }
 
-  override def start()(implicit executionContext: ExecutionContext) = {
+  override def start() = {
     watch(root, maxDepth)
-    executionContext.execute(() => Iterator.continually(service.take()).foreach(process))
+    thread.start
   }
 
-  override def close() = service.close()
+  override def close() = {
+    service.close()
+    thread.interrupt()
+  }
 
   // Although this class is abstract, we give provide implementations so user can choose to implement a subset of these
   override def onCreate(file: File, count: Int) = {}
